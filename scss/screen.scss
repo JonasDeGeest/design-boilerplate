@@ -31,7 +31,7 @@
 @import 'tools.typography';
 
 /* Generic */
-@import 'generic.normalize';
+@import '../vendor/normalize-scss/sass/normalize';
 @import 'generic.reset';
 @import 'generic.box-sizing';
 

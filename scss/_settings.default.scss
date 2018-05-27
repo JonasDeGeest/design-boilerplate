@@ -42,52 +42,52 @@
 }
 
 // Base colors
-$color-neutral                      : #aaa !default;
+$color-neutral:                      #aaa;
 
-$color-alpha                        : #0074D9 !default;
-$color-beta                         : #2ECC40 !default;
+$color-alpha:                        #0074D9;
+$color-beta:                         #2ECC40;
 
-$color-error                        : #FF4136 !default;
-$color-success                      : #2ECC40 !default;
-$color-notice                       : #FF851B !default;
+$color-error:                        #FF4136;
+$color-success:                      #2ECC40;
+$color-notice:                       #FF851B;
 
 // Palettes
 $palettes: (
     color-neutral: (
-        x-light                     : hsl(hue($color-neutral),0,100),
-        light                       : hsl(hue($color-neutral),0,90),
-        base                        : $color-neutral,
-        dark                        : hsl(hue($color-neutral),0,30),
-        x-dark                      : hsl(hue($color-neutral),0,10)
+        x-light:                     hsl(hue($color-neutral),0,100),
+        light:                       hsl(hue($color-neutral),0,90),
+        base:                        $color-neutral,
+        dark:                        hsl(hue($color-neutral),0,30),
+        x-dark:                      hsl(hue($color-neutral),0,10)
     ),
     color-alpha: (
-        light                       : hsl(hue($color-alpha),70,60),
-        base                        : $color-alpha,
-        dark                        : hsl(hue($color-alpha),100,25),
-        x-dark                      : hsl(hue($color-alpha),100,15)
+        light:                       hsl(hue($color-alpha),70,60),
+        base:                        $color-alpha,
+        dark:                        hsl(hue($color-alpha),100,25),
+        x-dark:                      hsl(hue($color-alpha),100,15)
     ),
     color-beta: (
-        light                       : hsl(hue($color-beta),70,60),
-        base                        : $color-beta,
-        dark                        : hsl(hue($color-beta),100,25),
-        x-dark                      : hsl(hue($color-beta),100,15)
+        light:                       hsl(hue($color-beta),70,60),
+        base:                        $color-beta,
+        dark:                        hsl(hue($color-beta),100,25),
+        x-dark:                      hsl(hue($color-beta),100,15)
     ),
     color-error: (
-        light                       : hsl(hue($color-error),70,60),
-        base                        : $color-error,
-        dark                        : hsl(hue($color-error),100,35),
+        light:                       hsl(hue($color-error),70,60),
+        base:                        $color-error,
+        dark:                        hsl(hue($color-error),100,35),
     ),
     color-success: (
-        light                       : hsl(hue($color-success),70,60),
-        base                        : $color-success,
-        dark                        : hsl(hue($color-success),100,35),
+        light:                       hsl(hue($color-success),70,60),
+        base:                        $color-success,
+        dark:                        hsl(hue($color-success),100,35),
     ),
     color-notice: (
-        light                       : hsl(hue($color-notice),70,60),
-        base                        : $color-notice,
-        dark                        : hsl(hue($color-notice),100,35),
+        light:                       hsl(hue($color-notice),70,60),
+        base:                        $color-notice,
+        dark:                        hsl(hue($color-notice),100,35),
     )
-) !default;
+);
 
 
 // ---
@@ -97,48 +97,48 @@ $palettes: (
 // manual modular scale font sizes
 // based on http://modularscale.com/scale/?px1=16&px2=18&ra1=1.333&ra2=0
 
-$ms-3                               : 11 !default;
-$ms-2                               : 12 !default;
-$ms-1                               : 14 !default;
-$ms0                                : 16 !default;
-$ms1                                : 18 !default;
-$ms2                                : 21 !default;
-$ms3                                : 23 !default;
-$ms4                                : 28 !default;
-$ms5                                : 31 !default;
-$ms6                                : 37 !default;
-$ms7                                : 42 !default;
-$ms8                                : 50 !default;
-$ms9                                : 56 !default;
-$ms10                               : 67 !default;
-$ms11                               : 75 !default;
-$ms12                               : 89 !default;
-$ms13                               : 100 !default;
+$ms-3:                   11;
+$ms-2:                   12;
+$ms-1:                   14;
+$ms0:                    16;
+$ms1:                    18;
+$ms2:                    21;
+$ms3:                    23;
+$ms4:                    28;
+$ms5:                    31;
+$ms6:                    37;
+$ms7:                    42;
+$ms8:                    50;
+$ms9:                    56;
+$ms10:                   67;
+$ms11:                   75;
+$ms12:                   89;
+$ms13:                   100;
 
 // ---
 // Font settings
 // ---
 
-$alpha-font-family                  : sans-serif !default;
-$beta-font-family                   : serif !default;
+$alpha-font-family:      sans-serif;
+$beta-font-family:       serif;
 
-$alpha-font-size                    : $ms0 !default;
+$alpha-font-size:        $ms0;
 
-$alpha-font-weight                  : 400 !default;
-$beta-font-weight                   : 700 !default;
+$alpha-font-weight:      400;
+$beta-font-weight:       700;
 
-$alpha-line-height                  : 1.5 !default;
+$alpha-line-height:      1.5;
 
-$alpha-leading                      : 1 !default;
-$beta-leading                       : 2 !default;
+$alpha-leading:          1;
+$beta-leading:           2;
 
 // ---
 // UI
 // ---
 
-$radius                             : 5px !default;
-$border-width                       : 1px !default;
-$border-style                       : solid !default;
+$radius:                 5px;
+$border-width:           1px;
+$border-style:           solid;
 
 
 // ---
@@ -146,31 +146,31 @@ $border-style                       : solid !default;
 // ---
 
 $z-indexes: (
-    alpha                           : 1,
-    beta                            : 2,
-    gamma                           : 3,
-    delta                           : 4,
-    epsilon                         : 5
-) !default;
+    alpha:               1,
+    beta:                2,
+    gamma:               3,
+    delta:               4,
+    epsilon:             5
+);
 
 // ---
 // Breakpoints
 // ---
 
 $breakpoints: (
-    bp1                             : 320/16*1em,
-    bp2                             : 480/16*1em,
-    bp3                             : 680/16*1em,
-    bp4                             : 960/16*1em,
-    bp5                             : 1140/16*1em
-) !default;
+    bp1:                 320 / 16 * 1em,
+    bp2:                 480 / 16 * 1em,
+    bp3:                 680 / 16 * 1em,
+    bp4:                 960 / 16 * 1em,
+    bp5:                 1140 / 16 * 1em
+);
 
 // ---
 // Grid
 // ---
 
 // 1 times the $alpha-font-size. It's calculated in rem in _tools.spacing.scss
-$columns-gutter                     : 1 !default;
+$columns-gutter:                       1;
 
 // Define the amount of columns in the grid
 $columns: (
@@ -179,190 +179,190 @@ $columns: (
     4,
     5,
     6
-) !default;
+);
 
 // ---
 // Increments
 // ---
 
 $increments: (
-    alpha                           : 0,
-    beta                            : .5,
-    gamma                           : 1,
-    delta                           : 1.5,
-    epsilon                         : 2
-) !default;
+    alpha:                              0,
+    beta:                               .5,
+    gamma:                              1,
+    delta:                              1.5,
+    epsilon:                            2
+);
 
 // ---
 // Animations
 // ---
 
-$animation-duration-alpha           : .1s !default;
-$animation-duration-beta            : .2s !default;
-$animation-duration-gamma           : .3s !default;
-$animation-easing-alpha             : ease-in-out !default;
-$animation-easing-beta              : cubic-bezier(.68, -.55, .265, 1.55) !default; // bouncy
+$animation-duration-alpha:              .1s;
+$animation-duration-beta:               .2s;
+$animation-duration-gamma:              .3s;
+$animation-easing-alpha:                ease-in-out;
+$animation-easing-beta:                 cubic-bezier(.68, -.55, .265, 1.55); // bouncy
 
 // ---
 // Page
 // ---
 
-$html-font-family                   : $alpha-font-family !default;
-$html-font-weight                   : $alpha-font-weight !default;
-$html-font-size                     : $alpha-font-size !default;
-$html-line-height                   : $alpha-line-height !default;
+$html-font-family:                      $alpha-font-family;
+$html-font-weight:                      $alpha-font-weight;
+$html-font-size:                        $alpha-font-size;
+$html-line-height:                      $alpha-line-height;
 
-$html-responsive-font-size          : false !default;
-$html-responsive-font-breakpoint    : bp5 !default;
-$html-responsive-font-magnification : 112.5% !default;
+$html-responsive-font-size:             false;
+$html-responsive-font-breakpoint:       bp5;
+$html-responsive-font-magnification:    112.5%;
 
-$html-background-color              : palette(color-neutral,dark) !default;
-$body-color                         : palette(color-neutral,dark) !default;
+$html-background-color:                 palette(color-neutral,dark);
+$body-color:                            palette(color-neutral,dark);
 
-$body-font-smoothing                : true !default;
+$body-font-smoothing:                   true;
 
-$body-selection-background-color    : palette(color-neutral,dark) !default;
-$body-selection-color               : palette(color-neutral,light) !default;
-$body-selection-text-shadow         : none !default;
+$body-selection-background-color:       palette(color-neutral,dark);
+$body-selection-color:                  palette(color-neutral,light);
+$body-selection-text-shadow:            none;
 
 // ---
 // Typography
 // ---
 
-$h1-font-family                     : $alpha-font-family !default;
-$h1-font-weight                     : $alpha-font-weight !default;
-$h1-font-size                       : $ms6 !default;
-$h1-line-height                     : 2 !default;
-$h1-margin-bottom                   : $alpha-leading !default;
+$h1-font-family:                        $alpha-font-family;
+$h1-font-weight:                        $alpha-font-weight;
+$h1-font-size:                          $ms6;
+$h1-line-height:                        2;
+$h1-margin-bottom:                      $alpha-leading;
 
-$h2-font-family                     : $alpha-font-family !default;
-$h2-font-weight                     : $alpha-font-weight !default;
-$h2-font-size                       : $ms4 !default;
-$h2-line-height                     : 1.5 !default;
-$h2-margin-bottom                   : $alpha-leading !default;
+$h2-font-family:                        $alpha-font-family;
+$h2-font-weight:                        $alpha-font-weight;
+$h2-font-size:                          $ms4;
+$h2-line-height:                        1.5;
+$h2-margin-bottom:                      $alpha-leading;
 
-$h3-font-family                     : $alpha-font-family !default;
-$h3-font-weight                     : $alpha-font-weight !default;
-$h3-font-size                       : $ms3 !default;
-$h3-line-height                     : 1.25 !default;
-$h3-margin-bottom                   : $alpha-leading !default;
+$h3-font-family:                        $alpha-font-family;
+$h3-font-weight:                        $alpha-font-weight;
+$h3-font-size:                          $ms3;
+$h3-line-height:                        1.25;
+$h3-margin-bottom:                      $alpha-leading;
 
-$h4-font-family                     : $alpha-font-family !default;
-$h4-font-weight                     : $alpha-font-weight !default;
-$h4-font-size                       : $ms2 !default;
-$h4-line-height                     : 1.25 !default;
-$h4-margin-bottom                   : $alpha-leading !default;
+$h4-font-family:                        $alpha-font-family;
+$h4-font-weight:                        $alpha-font-weight;
+$h4-font-size:                          $ms2;
+$h4-line-height:                        1.25;
+$h4-margin-bottom:                      $alpha-leading;
 
-$h5-font-family                     : $alpha-font-family !default;
-$h5-font-weight                     : $alpha-font-weight !default;
-$h5-font-size                       : $ms2 !default;
-$h5-line-height                     : 1 !default;
-$h5-margin-bottom                   : $alpha-leading !default;
+$h5-font-family:                        $alpha-font-family;
+$h5-font-weight:                        $alpha-font-weight;
+$h5-font-size:                          $ms2;
+$h5-line-height:                        1;
+$h5-margin-bottom:                      $alpha-leading;
 
-$h6-font-family                     : $alpha-font-family !default;
-$h6-font-weight                     : $alpha-font-weight !default;
-$h6-font-size                       : $ms1 !default;
-$h6-line-height                     : 1 !default;
-$h6-margin-bottom                   : $alpha-leading !default;
+$h6-font-family:                        $alpha-font-family;
+$h6-font-weight:                        $alpha-font-weight;
+$h6-font-size:                          $ms1;
+$h6-line-height:                        1;
+$h6-margin-bottom:                      $alpha-leading;
 
-$base-font-size                     : $alpha-font-size !default;
-$base-line-height                   : 1 !default;
-$base-margin-bottom                 : $beta-leading !default;
-$base-indent                        : 2 !default;
+$base-font-size:                        $alpha-font-size;
+$base-line-height:                      1;
+$base-margin-bottom:                    $beta-leading;
+$base-indent:                           2;
 
-$blockquote-font-style              : italic !default;
-$blockquote-font-size               : $ms1 !default;
-$blockquote-line-height             : 1 !default;
-$blockquote-margin-bottom           : $alpha-leading !default;
+$blockquote-font-style:                 italic;
+$blockquote-font-size:                  $ms1;
+$blockquote-line-height:                1;
+$blockquote-margin-bottom:              $alpha-leading;
 
-$small-font-size                    : $ms-1 !default;
-$small-line-height                  : 1 !default;
-$small-margin-bottom                : $alpha-leading !default;
+$small-font-size:                       $ms-1;
+$small-line-height:                     1;
+$small-margin-bottom:                   $alpha-leading;
 
-$horizontal-rule-border-width       : 1px 0 0 !default;
-$horizontal-rule-border-style       : solid !default;
-$horizontal-rule-border-color       : palette(color-neutral,light) !default;
+$horizontal-rule-border-width:          1px 0 0;
+$horizontal-rule-border-style:          solid;
+$horizontal-rule-border-color:          palette(color-neutral,light);
 
-$horizontal-rule-margin-top         : 0 !default;
-$horizontal-rule-margin-bottom      : $alpha-leading !default;
+$horizontal-rule-margin-top:            0;
+$horizontal-rule-margin-bottom:         $alpha-leading;
 
-$link-transition                    : none !default;
+$link-transition:                       none;
 
-$link-decoration                    : none !default;
-$link-decoration--hover             : underline !default;
+$link-decoration:                       none;
+$link-decoration--hover:                underline;
 
-$link-color                         : palette(color-alpha) !default;
-$link-color--visited                : palette(color-alpha) !default;
-$link-color--hover                  : palette(color-alpha,light) !default;
-$link-color--focus                  : palette(color-alpha,light) !default;
+$link-color:                            palette(color-alpha);
+$link-color--visited:                   palette(color-alpha);
+$link-color--hover:                     palette(color-alpha,light);
+$link-color--focus:                     palette(color-alpha,light);
 
-$link-outline                       : 0 !default;
-$link-outline--focus                : thin dotted !default;
+$link-outline:                          0;
+$link-outline--focus:                   thin dotted;
 
 // ---
 // Images
 // ---
 
-$img-max-width                      : 100% !default;
-$img-border                         : 0 !default;
+$img-max-width:                         100%;
+$img-border:                            0;
 
 // ---
 // Forms
 // ---
 
-$fieldset-border                    : 0 !default;
-$fieldset-margin-bottom             : $alpha-leading !default;
+$fieldset-border:                       0;
+$fieldset-margin-bottom:                $alpha-leading;
 
-$legend-font-size                   : $alpha-font-size !default;
-$legend-line-height                 : $alpha-line-height !default;
-$legend-margin-bottom               : $alpha-leading !default;
+$legend-font-size:                      $alpha-font-size;
+$legend-line-height:                    $alpha-line-height;
+$legend-margin-bottom:                  $alpha-leading;
 
-$label-font-size                    : $alpha-font-size !default;
-$label-line-height                  : $alpha-line-height !default;
-$label-margin-bottom                : $alpha-leading !default;
+$label-font-size:                       $alpha-font-size;
+$label-line-height:                     $alpha-line-height;
+$label-margin-bottom:                   $alpha-leading;
 
-$placeholder-font-family            : $alpha-font-family !default;
-$placeholder-font-style             : italic !default;
-$placeholder-color                  : palette(color-neutral, light) !default;
+$placeholder-font-family:               $alpha-font-family;
+$placeholder-font-style:                italic;
+$placeholder-color:                     palette(color-neutral, light);
 
-$firefox-inner-border-fix           : true !default;
+$firefox-inner-border-fix:              true;
 
 // ---
 // Tables
 // ---
 
-$table-font-family                  : $alpha-font-family !default;
-$table-align                        : left !default;
+$table-font-family:                     $alpha-font-family;
+$table-align:                           left;
 
-$caption-font-family                : $alpha-font-family !default;
-$caption-font-weight                : $beta-font-weight;
-$caption-align                      : center !default;
-$caption-margin-bottom              : $alpha-leading !default;
-$caption-padding-bottom             : $alpha-leading !default;
+$caption-font-family:                   $alpha-font-family;
+$caption-font-weight:                   $beta-font-weight;
+$caption-align:                         center;
+$caption-margin-bottom:                 $alpha-leading;
+$caption-padding-bottom:                $alpha-leading;
 
 // ---
 // Grid
 // ---
 
-$grid-max-width                     : map-get($breakpoints,bp5) !default;
-$grid-gutter                        : $columns-gutter !default;
+$grid-max-width:                        map-get($breakpoints,bp5);
+$grid-gutter:                           $columns-gutter;
 
 // ---
 // Media
 // ---
 
-$media-object-gutter                : $columns-gutter !default;
-$media-object-margin-bottom         : $alpha-leading !default;
+$media-object-gutter:                   $columns-gutter;
+$media-object-margin-bottom:            $alpha-leading;
 
 // ---
 // Media-embed
 // ---
 
-$media-embed-ratio                  : 62.5% !default;
-$media-embed-margin-bottom          : $alpha-leading !default;
+$media-embed-ratio:                     62.5%;
+$media-embed-margin-bottom:             $alpha-leading;
 
 // ---
 // Debug
 // ---
 
-$debug-mode                         : false !default; // toggles the debug mode
+$debug-mode:                            false; // toggles the debug mode

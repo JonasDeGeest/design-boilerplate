@@ -23,10 +23,10 @@ gulp.task('symbols', function () {
             parserOptions: { xmlMode: true }
         }))
         .pipe(svgmin())
-        .pipe(rename({prefix: config.prefix}))
+        .pipe(rename({ prefix: config.prefix }))
         .pipe(svgsymbols({
             title: '%f icon',
-            svgClassname: config.class,
+            svgAttrs: { class: config.class },
             templates: ['default-svg']
         }))
         .pipe(gulp.dest(config.dest));

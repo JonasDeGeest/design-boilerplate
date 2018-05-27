@@ -6,55 +6,52 @@
 */
 
 /**
- * As well as using normalize.css, it is often advantageous to remove all
- * margins from certain elements.
+ * A very simple reset that sits on top of Normalize.css.
  */
+
+blockquote,
 body,
+dd,
+dl,
+fieldset,
+figure,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p,
-blockquote,
-pre,
-dl,
-dd,
-ol,
-ul,
-form,
-fieldset,
+hr,
 legend,
-figure,
-table,
-th,
-td,
-caption,
-hr {
+ol,
+p,
+pre,
+ul {
     margin: 0;
     padding: 0;
 }
-
 /**
- * Give a help cursor to elements that give extra info on `:hover`.
+ * Remove trailing margins from nested lists.
  */
-abbr[title],
-dfn[title] {
-    cursor: help;
+li > {
+    ol,
+    ul {
+        margin-bottom: 0;
+    }
 }
-
 /**
- * Remove underlines from potentially troublesome elements.
+ * Remove default table spacing.
  */
-u,
-ins {
-    text-decoration: none;
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-
 /**
- * Apply faux underlines to inserted text via `border-bottom`.
+ * 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
+ *    on fieldsets.
  */
-ins {
-    border-bottom: 1px solid;
+fieldset {
+    min-width: 0;
+    /* [1] */
+    border: 0;
 }

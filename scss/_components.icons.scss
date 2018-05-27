@@ -17,11 +17,7 @@
 }
 
 .c-icon--toggle {
-    background-image: url('../img/png/toggle--sprite.png');
-
-    .svg & {
-        background-image: url('../img/svg/toggle--sprite.svg');
-    }
+    background-image: url('../img/png/toggle--sprite.svg');
 
     .is-toggled & {
         background-position: center -46px;

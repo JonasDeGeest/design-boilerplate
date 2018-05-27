@@ -5,13 +5,13 @@
 */
 
 html {
-    font: $html-font-weight #{$html-font-size/16*100%}/#{$html-line-height} $html-font-family;
+    font: $html-font-weight #{($html-font-size / 16) * 100%}/#{$html-line-height} $html-font-family;
     -webkit-overflow-scrolling: touch;
     background-color: $html-background-color;
 
     @if $html-responsive-font-size == true {
         @include mq($html-responsive-font-breakpoint) {
-            font-size: $alpha-font-size/16*$html-responsive-font-magnification;
+            font-size: ($alpha-font-size / 16) * $html-responsive-font-magnification;
         }
     }
 }
