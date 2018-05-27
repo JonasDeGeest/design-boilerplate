@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body{% if page.section %} class="c-{{ page.section }}"{% endif%}>
+
+    <!-- Deprecated browser alert -->
+    {% include alert-outdated-browser.html %}
+    <!-- End deprecated browser alert -->
+
+    <!-- Page header -->
+    {% include page-header.html %}
+    <!-- End page header -->
+
+    {{ content }}
+
+    <!-- Page footer -->
+    {% include page-footer.html %}
+    <!-- End page footer -->
+
+    <!-- Footer javascript -->
+    {% include javascript.html %}
+    <!-- End footer javascript -->
+
+</body>
+</html>
