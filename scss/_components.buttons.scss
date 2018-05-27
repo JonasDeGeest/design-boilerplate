@@ -37,6 +37,7 @@
     box-shadow: none;
     -webkit-font-smoothing: antialiased; /* [4] */
     -moz-osx-font-smoothing: grayscale; /* [4] */
+    font-weight: $beta-font-weight;
 
     &:hover,
     &:focus {
@@ -61,24 +62,6 @@
 .c-button--block {
     display: block;
     width: 100%;
-}
-
-.c-button--float-left {
-    display: block;
-    float: left;
-
-    .c-button-group > & {
-        @include margin-right(1);
-    }
-}
-
-.c-button--float-right {
-    display: block;
-    float: right;
-
-    .c-button-group > & {
-        @include margin-right(1);
-    }
 }
 
 // Button sizes
@@ -145,11 +128,4 @@
 
 .c-button--postfix {
     border-radius: 0 $radius $radius 0;
-}
-
-// Button-group
-
-.c-button-group {
-    position: relative;
-    @include clearfix;
 }

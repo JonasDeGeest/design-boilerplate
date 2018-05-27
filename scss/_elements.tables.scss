@@ -16,6 +16,5 @@ caption {
     font-family: $alpha-font-family;
     font-weight: $beta-font-weight;
     text-align: $caption-align;
-    @include padding-bottom($caption-margin-bottom);
-    @include margin-bottom($caption-padding-bottom);
+    @include padding-bottom($caption-padding-bottom);
 }

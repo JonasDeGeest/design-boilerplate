@@ -45,11 +45,11 @@
 $color-neutral:                      #aaa;
 
 $color-alpha:                        #0074D9;
-$color-beta:                         #2ECC40;
+$color-beta:                         #3D9970;
 
 $color-error:                        #FF4136;
 $color-success:                      #2ECC40;
-$color-notice:                       #FF851B;
+$color-notice:                       #0074D9;
 
 // Palettes
 $palettes: (
@@ -57,20 +57,20 @@ $palettes: (
         x-light:                     hsl(hue($color-neutral),0,100),
         light:                       hsl(hue($color-neutral),0,90),
         base:                        $color-neutral,
-        dark:                        hsl(hue($color-neutral),0,30),
-        x-dark:                      hsl(hue($color-neutral),0,10)
+        dark:                        hsl(hue($color-neutral),0,40),
+        x-dark:                      hsl(hue($color-neutral),0,20)
     ),
     color-alpha: (
         light:                       hsl(hue($color-alpha),70,60),
         base:                        $color-alpha,
-        dark:                        hsl(hue($color-alpha),100,25),
-        x-dark:                      hsl(hue($color-alpha),100,15)
+        dark:                        hsl(hue($color-alpha),70,25),
+        x-dark:                      hsl(hue($color-alpha),70,15)
     ),
     color-beta: (
-        light:                       hsl(hue($color-beta),70,60),
+        light:                       hsl(hue($color-beta),60,60),
         base:                        $color-beta,
-        dark:                        hsl(hue($color-beta),100,25),
-        x-dark:                      hsl(hue($color-beta),100,15)
+        dark:                        hsl(hue($color-beta),70,25),
+        x-dark:                      hsl(hue($color-beta),70,15)
     ),
     color-error: (
         light:                       hsl(hue($color-error),70,60),
@@ -187,11 +187,11 @@ $columns: (
 // ---
 
 $increments: (
-    alpha:                              0,
-    beta:                               .5,
-    gamma:                              1,
-    delta:                              1.5,
-    epsilon:                            2
+    0:                              0,
+    1:                              .5,
+    2:                              1,
+    3:                              1.5,
+    4:                              2
 );
 
 // ---
@@ -218,7 +218,7 @@ $html-responsive-font-breakpoint:       bp5;
 $html-responsive-font-magnification:    112.5%;
 
 $html-background-color:                 palette(color-neutral,light);
-$body-color:                            palette(color-neutral,dark);
+$body-color:                            palette(color-neutral,x-dark);
 
 $body-font-smoothing:                   true;
 
@@ -237,32 +237,32 @@ $h1-line-height:                        2;
 $h1-margin-bottom:                      $alpha-leading;
 
 $h2-font-family:                        $alpha-font-family;
-$h2-font-weight:                        $alpha-font-weight;
+$h2-font-weight:                        $beta-font-weight;
 $h2-font-size:                          $ms4;
 $h2-line-height:                        1.5;
 $h2-margin-bottom:                      $alpha-leading;
 
 $h3-font-family:                        $alpha-font-family;
-$h3-font-weight:                        $alpha-font-weight;
+$h3-font-weight:                        $beta-font-weight;
 $h3-font-size:                          $ms3;
 $h3-line-height:                        1.25;
 $h3-margin-bottom:                      $alpha-leading;
 
 $h4-font-family:                        $alpha-font-family;
-$h4-font-weight:                        $alpha-font-weight;
-$h4-font-size:                          $ms2;
-$h4-line-height:                        1.25;
+$h4-font-weight:                        $beta-font-weight;
+$h4-font-size:                          $ms0;
+$h4-line-height:                        1;
 $h4-margin-bottom:                      $alpha-leading;
 
 $h5-font-family:                        $alpha-font-family;
-$h5-font-weight:                        $alpha-font-weight;
-$h5-font-size:                          $ms2;
+$h5-font-weight:                        $beta-font-weight;
+$h5-font-size:                          $ms0;
 $h5-line-height:                        1;
 $h5-margin-bottom:                      $alpha-leading;
 
 $h6-font-family:                        $alpha-font-family;
-$h6-font-weight:                        $alpha-font-weight;
-$h6-font-size:                          $ms1;
+$h6-font-weight:                        $beta-font-weight;
+$h6-font-size:                          $ms0;
 $h6-line-height:                        1;
 $h6-margin-bottom:                      $alpha-leading;
 

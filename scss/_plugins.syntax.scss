@@ -15,12 +15,12 @@ $syntax-color:                  palette(color-neutral,dark) !default;
 $syntax-border-width:           $border-width !default;
 $syntax-border-style:           $border-style !default;
 $syntax-border-radius:          $radius !default;
-$syntax-border-color:           palette(color-neutral) !default;
+$syntax-border-color:           palette(color-neutral, light) !default;
 
 $syntax-margin-top:             .5 !default;
 $syntax-margin-bottom:          .5 !default;
 
-$syntax-font-size:              90% !default;
+$syntax-font-size:              12px !default;
 
 $linenos-color:                 palette(color-neutral,dark) !default;
 $linenos-background-color:      palette(color-neutral,light) !default;
@@ -48,7 +48,7 @@ $syntax-color-epsilon:          #859900 !default; // operators, other keywords
 // Styles
 // ---
 
-.highlighttable {
+.highlight {
     display: block;
     overflow: auto;
     font-size: $syntax-font-size;
@@ -67,8 +67,22 @@ $syntax-color-epsilon:          #859900 !default; // operators, other keywords
     @include padding-lr($linenos-padding-left,$linenos-padding-right);
 }
 
+.rouge-table {
+    margin: 0;
+}
+
 .code {
     @include padding-lr($code-padding-left,$code-padding-right);
+}
+
+.gl,
+.code {
+    font-size: $syntax-font-size;
+}
+
+.gutter {
+    background-color: palette(color-neutral, light);
+    @include padding-lr(.5,.5);
 }
 
 .highlight .c { color: $syntax-color-base-01; } /* Comment */

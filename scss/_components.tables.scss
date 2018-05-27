@@ -1,0 +1,81 @@
+/*
+    Component: tables
+    ---
+    Tabular data styles
+*/
+
+.c-table {
+    display: inline-block;
+    overflow-x: auto;
+    white-space: initial;
+    border: $border-width $border-style palette(color-neutral, light);
+    @include ms0;
+
+    > thead > tr {
+        border-bottom: $border-width $border-style palette(color-neutral, light);
+
+        > th {
+            @include padding-tb(.65,.65);
+            @include padding-lr(.65,.65);
+        }
+    }
+
+    > tbody > tr {
+        border-bottom: $border-width $border-style palette(color-neutral, light);
+
+        > td,
+        > th {
+            @include padding-tb(.65,.65);
+            @include padding-lr(.65,.65);
+        }
+
+        &:last-child {
+            border: 0;
+        }
+    }
+
+    > tfoot > tr {
+        border-top: $border-width $border-style palette(color-neutral, light);
+
+        > td,
+        > th {
+            font-weight: $beta-font-weight;
+            @include padding-tb(.65,.65);
+            @include padding-lr(.65,.65);
+        }
+    }
+
+    @include mq(bp3) {
+        display: table;
+    }
+}
+
+.c-table--nb {
+    border: 0;
+
+    > thead > tr {
+        border-bottom: 0;
+    }
+
+    > tbody > tr {
+        border-bottom: 0;
+
+        > td,
+        > th {
+            @include padding-tb(.25,.25);
+            @include padding-lr(0,.65);
+        }
+
+        &:last-child {
+            border: 0;
+        }
+    }
+
+    > tfoot > tr {
+        border-top: 0;
+    }
+}
+
+.c-table--sm {
+    @include ms-1();
+}
