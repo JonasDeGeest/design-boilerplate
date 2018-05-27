@@ -6,7 +6,13 @@
 
 .c-row {
     @include padding-tb($alpha-leading,0);
-    @include padding-lr($columns-gutter,$columns-gutter);
+    @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
+}
+
+.c-row--lg {
+    @include mq(bp3) {
+        @include padding-tb($alpha-leading * 2,$alpha-leading);
+    }
 }
 
 .c-row--alpha {
@@ -14,6 +20,5 @@
 }
 
 .c-row--beta {
-    color: palette(color-neutral,light);
-    background-color: palette(color-neutral,dark);
+    background-color: palette(color-neutral,light);
 }

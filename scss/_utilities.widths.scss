@@ -14,6 +14,10 @@
             // Build a class in the format `.u-4-of-6`
             .u-#{$numerator}-of-#{$denominator} {
                 width: ($numerator / $denominator) * 100% !important;
+                @if $grid-property == 'flex' {
+                    flex-basis: ($numerator / $denominator) * 100%;
+                    flex-grow: 0;
+                }
             }
         }
     }
@@ -32,6 +36,10 @@
                     // Build a class in the format `.u-4-of-6`
                     .u-#{$numerator}-of-#{$denominator}-#{$breakpoint} {
                         width: ($numerator / $denominator) * 100% !important;
+                        @if $grid-property == 'flex' {
+                            flex-basis: ($numerator / $denominator) * 100%;
+                            flex-grow: 0;
+                        }
                     }
                 }
             }

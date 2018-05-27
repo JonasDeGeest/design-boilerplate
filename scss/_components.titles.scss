@@ -1,0 +1,11 @@
+/*
+    Components: Titles
+    ---
+    Creates a horizontal row with padding
+*/
+
+.c-title-page {
+    @include mq(bp3) {
+        @include ms8();
+    }
+}

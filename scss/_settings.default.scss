@@ -119,7 +119,7 @@ $ms13:                   100;
 // Font settings
 // ---
 
-$alpha-font-family:      sans-serif;
+$alpha-font-family:      -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $beta-font-family:       serif;
 
 $alpha-font-size:        $ms0;
@@ -136,7 +136,7 @@ $beta-leading:           2;
 // UI
 // ---
 
-$radius:                 5px;
+$radius:                 3px;
 $border-width:           1px;
 $border-style:           solid;
 
@@ -170,10 +170,11 @@ $breakpoints: (
 // ---
 
 // 1 times the $alpha-font-size. It's calculated in rem in _tools.spacing.scss
-$columns-gutter:                       1;
+$columns-gutter:                       .5;
 
 // Define the amount of columns in the grid
 $columns: (
+    1,
     2,
     3,
     4,
@@ -216,7 +217,7 @@ $html-responsive-font-size:             false;
 $html-responsive-font-breakpoint:       bp5;
 $html-responsive-font-magnification:    112.5%;
 
-$html-background-color:                 palette(color-neutral,dark);
+$html-background-color:                 palette(color-neutral,light);
 $body-color:                            palette(color-neutral,dark);
 
 $body-font-smoothing:                   true;
@@ -230,7 +231,7 @@ $body-selection-text-shadow:            none;
 // ---
 
 $h1-font-family:                        $alpha-font-family;
-$h1-font-weight:                        $alpha-font-weight;
+$h1-font-weight:                        $beta-font-weight;
 $h1-font-size:                          $ms6;
 $h1-line-height:                        2;
 $h1-margin-bottom:                      $alpha-leading;
@@ -267,7 +268,7 @@ $h6-margin-bottom:                      $alpha-leading;
 
 $base-font-size:                        $alpha-font-size;
 $base-line-height:                      1;
-$base-margin-bottom:                    $beta-leading;
+$base-margin-bottom:                    $alpha-leading;
 $base-indent:                           2;
 
 $blockquote-font-style:                 italic;
@@ -344,6 +345,7 @@ $caption-padding-bottom:                $alpha-leading;
 // Grid
 // ---
 
+$grid-property:                         'flex';
 $grid-max-width:                        map-get($breakpoints,bp5);
 $grid-gutter:                           $columns-gutter;
 

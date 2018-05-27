@@ -15,18 +15,6 @@
     }
 }
 
-// UI mixins.
-
-// Cross browser background opacity.
-
-@mixin background-opacity($color, $alpha) {
-    $rgba: rgba($color, $alpha);
-    $ie-hex-str: ie-hex-str($rgba);
-    background-color: $rgba;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
-    zoom: 1;
-}
-
 //
 // Media Query mixin
 // @include mq(#point, #query1, #query2);
@@ -44,15 +32,6 @@
             @content;
         }
     }
-}
-
-// Vertically center any object within its container. Works in IE9 and up.
-// @include vertical-center;
-
-@mixin vertical-center {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 // Clearfix.
@@ -86,4 +65,66 @@
     text-shadow: none;
     background-color: transparent;
     border: 0;
+}
+
+// Modularscale
+
+@mixin ms-3 {
+    @include text-dimensions($ms-3,.25);
+}
+
+@mixin ms-2 {
+    @include text-dimensions($ms-2,.5);
+}
+
+@mixin ms-1 {
+    @include text-dimensions($ms-1,.75);
+}
+
+@mixin ms0 {
+    @include text-dimensions($ms0,1);
+}
+
+@mixin ms1 {
+    @include text-dimensions($ms1,1.25);
+}
+
+@mixin ms2 {
+    @include text-dimensions($ms2,1.5);
+}
+
+@mixin ms3 {
+    @include text-dimensions($ms3,1.75);
+}
+
+@mixin ms4 {
+    @include text-dimensions($ms4,2);
+}
+
+@mixin ms5 {
+    @include text-dimensions($ms5,2.25);
+}
+
+@mixin ms6 {
+    @include text-dimensions($ms6,2.5);
+}
+
+@mixin ms7 {
+    @include text-dimensions($ms7,2.75);
+}
+
+@mixin ms8 {
+    @include text-dimensions($ms8,3);
+}
+
+@mixin ms9 {
+    @include text-dimensions($ms9,3.25);
+}
+
+@mixin ms10 {
+    @include text-dimensions($ms10,3.75);
+}
+
+@mixin ms11 {
+    @include text-dimensions($ms11,4);
 }
