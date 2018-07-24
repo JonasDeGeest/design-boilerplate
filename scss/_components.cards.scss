@@ -17,8 +17,11 @@
     }
 
 .c-card--alpha {
-    color: palette(color-neutral,dark);
     background-color: palette(color-neutral,x-light);
     border: $border-width $border-style palette(color-neutral,light);
     border-radius: $radius;
 }
+
+    .c-card__title {
+        @include margin-bottom(1);
+    }

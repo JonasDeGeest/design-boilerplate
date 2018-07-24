@@ -6,7 +6,7 @@
     "type": "git",
     "url": "git@github.com:JonasDeGeest/design-boilerplate.git"
   },
-  "description": "My own mobile-first responsive Design Framework built with Sass",
+  "description": "Mobile-first responsive Design Framework built with Sass",
   "main": "gulpfile.js",
   "devDependencies": {
     "autoprefixer": "^8.3.0",
