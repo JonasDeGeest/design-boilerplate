@@ -1,0 +1,17 @@
+/*
+    Component: Page title
+    ---
+    Big page title styles
+*/
+
+.itp-PageTitle {
+    color: var(--colorPrimary);
+    font-weight: var(--fontWeightTertiary);
+    font-size: calc(var(--ms7) / var(--fontSizePrimary) * 1rem);
+}
+
+@media (--bp4) {
+    .itp-PageTitle {
+        font-size: calc(var(--ms10) / var(--fontSizePrimary) * 1rem);
+    }
+}

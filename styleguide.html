@@ -1,233 +1,101 @@
 ---
-layout: default
+layout: sidebar
 title: Patterns
 section: styleguide
 ---
-<div class="c-row c-row--lg c-row--alpha">
-    <div class="o-container">
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item">
-                <h1 class="c-title-page u-mb-0">{{ page.title }}</h1>
+<div class="l-Row">
+    <div class="l-Container">
+        <div class="l-Grid l-Grid--gutter">
+            <div class="l-Grid__item">
+                <h1 class="itp-PageTitle">{{ page.title }}</h1>
             </div>
         </div>
     </div>
 </div>
 
-<section class="c-row c-row--lg c-row--alpha">
-    <div class="o-container">
-        <h2 class="c-styleguide-title">Base Elements</h2>
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item u-1-of-1 u-2-of-3-bp4">
+<section id="base" class="l-Row">
+    <div class="l-Container">
+        <h2 class="s-SectionTitle">Base Elements</h2>
+        <div class="l-Grid l-Grid--gutter">
+            <div class="l-Grid__item">
                 {% include styleguide-base.html %}
             </div>
-            <div class="o-grid__item u-1-of-1 u-pb-3">
-                <pre class="c-scss">_elements.base.scss</pre>
-                <button class="c-styleguide-toggle js-show-hide" data-target-selector=".js-snippet-base">
-                    {% include symbol.html value="right" %} HTML snippet
-                </button>
-                <div class="js-snippet-base is-hidden">
-                    {% highlight html linenos=table %}
-                        {% include styleguide-base.html %}
-                    {% endhighlight %}
-                </div>
-            </div>
         </div>
     </div>
 </section>
 
-<section class="c-row c-row--lg c-row--alpha">
-    <div class="o-container">
+<section id="colors" class="l-Row">
+    <div class="l-Container">
         <h2 class="c-styleguide-title">Colors</h2>
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item u-1-of-1">
+        <div class="l-Grid l-Grid--gutter">
+            <div class="l-Grid__item u-1-of-1">
                 {% include styleguide-colors.html %}
             </div>
-            <div class="o-grid__item u-1-of-1 u-pb-3">
-                <pre class="c-scss">_trumps.colors.scss</pre>
-                <button class="c-styleguide-toggle js-show-hide" data-target-selector=".js-snippet-colors">
-                    {% include symbol.html value="right" %} HTML snippet
-                </button>
-                <div class="js-snippet-colors is-hidden">
-                    {% highlight html linenos=table %}
-                        {% include styleguide-colors.html %}
-                    {% endhighlight %}
-                </div>
-            </div>
         </div>
     </div>
 </section>
 
-<section class="c-row c-row--lg c-row--alpha">
-    <div class="o-container">
+<section id="buttons" class="l-Row">
+    <div class="l-Container">
         <h2 class="c-styleguide-title">Buttons</h2>
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item u-1-of-1 u-2-of-3-bp4">
+        <div class="l-Grid l-Grid--gutter">
+            <div class="l-Grid__item">
                 {% include styleguide-buttons.html %}
             </div>
-            <div class="o-grid__item u-1-of-1 u-pb-3">
-                <pre class="c-scss">._components.buttons.scss</pre>
-                <button class="c-styleguide-toggle js-show-hide" data-target-selector=".js-snippet-buttons">
-                    {% include symbol.html value="right" %} HTML snippet
-                </button>
-                <div class="js-snippet-buttons is-hidden">
-                    {% highlight html linenos=table %}
-                        {% include styleguide-buttons.html %}
-                    {% endhighlight %}
-                </div>
-            </div>
         </div>
     </div>
 </section>
 
-<section class="c-row c-row--lg c-row--alpha">
-    <div class="o-container">
-        <h2 class="c-styleguide-title">Lists</h2>
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item u-1-of-1 u-2-of-3-bp4">
-                {% include styleguide-lists.html %}
-            </div>
-            <div class="o-grid__item u-1-of-1 u-pb-3">
-                <pre class="c-scss">._components.lists.scss</pre>
-                <button class="c-styleguide-toggle js-show-hide" data-target-selector=".js-snippet-lists">
-                    {% include symbol.html value="right" %} HTML snippet
-                </button>
-                <div class="js-snippet-lists is-hidden">
-                    {% highlight html linenos=table %}
-                        {% include styleguide-lists.html %}
-                    {% endhighlight %}
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="c-row c-row--lg c-row--alpha">
-    <div class="o-container">
+<section id="forms" class="l-Row">
+    <div class="l-Container">
         <h2 class="c-styleguide-title">Forms</h2>
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item u-1-of-1 u-2-of-3-bp4">
+        <div class="l-Grid l-Grid--gutter">
+            <div class="l-Grid__item">
                 {% include styleguide-forms.html %}
             </div>
-            <div class="o-grid__item u-1-of-1 u-pb-3">
-                <pre class="c-scss">._components.forms.scss</pre>
-                <button class="c-styleguide-toggle js-show-hide" data-target-selector=".js-snippet-forms">
-                    {% include symbol.html value="right" %} HTML snippet
-                </button>
-                <div class="js-snippet-forms is-hidden">
-                    {% highlight html linenos=table %}
-                        {% include styleguide-forms.html %}
-                    {% endhighlight %}
-                </div>
-            </div>
         </div>
     </div>
 </section>
 
-<section class="c-row c-row--lg c-row--alpha">
-    <div class="o-container">
+<section id="alerts" class="l-Row">
+    <div class="l-Container">
         <h2 class="c-styleguide-title">Alerts</h2>
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item u-1-of-1 u-2-of-3-bp4">
+        <div class="l-Grid l-Grid--gutter">
+            <div class="l-Grid__item">
                 {% include styleguide-alerts.html %}
             </div>
-            <div class="o-grid__item u-1-of-1 u-pb-3">
-                <pre class="c-scss">._components.alerts.scss</pre>
-                <button class="c-styleguide-toggle js-show-hide" data-target-selector=".js-snippet-alerts">
-                    {% include symbol.html value="right" %} HTML snippet
-                </button>
-                <div class="js-snippet-alerts is-hidden">
-                    {% highlight html linenos=table %}
-                        {% include styleguide-alerts.html %}
-                    {% endhighlight %}
-                </div>
-            </div>
         </div>
     </div>
 </section>
 
-<section class="c-row c-row--lg c-row--alpha">
-    <div class="o-container">
+<section id="pagination" class="l-Row">
+    <div class="l-Container">
         <h2 class="c-styleguide-title">Pagination</h2>
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item u-1-of-1 u-2-of-3-bp4">
+        <div class="l-Grid l-Grid--gutter">
+            <div class="l-Grid__item">
                 {% include styleguide-pagination.html %}
             </div>
-            <div class="o-grid__item u-1-of-1 u-pb-3">
-                <pre class="c-scss">._components.pagination.scss</pre>
-                <button class="c-styleguide-toggle js-show-hide" data-target-selector=".js-snippet-pagination">
-                    {% include symbol.html value="right" %} HTML snippet
-                </button>
-                <div class="js-snippet-pagination is-hidden">
-                    {% highlight html linenos=table %}
-                        {% include styleguide-pagination.html %}
-                    {% endhighlight %}
-                </div>
-            </div>
         </div>
     </div>
 </section>
 
-<section class="c-row c-row--lg c-row--alpha">
-    <div class="o-container">
+<section id="helpers" class="l-Row">
+    <div class="l-Container">
         <h2 class="c-styleguide-title">Helpers</h2>
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item u-1-of-1 u-2-of-3-bp4">
+        <div class="l-Grid l-Grid--gutter">
+            <div class="l-Grid__item">
                 {% include styleguide-helpers.html %}
             </div>
-            <div class="o-grid__item u-1-of-1 u-pb-3">
-                <pre class="c-scss">._trumps.helpers.scss</pre>
-                <button class="c-styleguide-toggle js-show-hide" data-target-selector=".js-snippet-helpers">
-                    {% include symbol.html value="right" %} HTML snippet
-                </button>
-                <div class="js-snippet-helpers is-hidden">
-                    {% highlight html linenos=table %}
-                        % include styleguide-helpers.html %}
-                    {% endhighlight %}
-                </div>
-            </div>
         </div>
     </div>
 </section>
 
-<section class="c-row c-row--lg c-row--alpha">
-    <div class="o-container">
-        <h2 class="c-styleguide-title">Media object</h2>
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item u-1-of-1 u-2-of-3-bp4">
-                {% include styleguide-media.html %}
-            </div>
-            <div class="o-grid__item u-1-of-1 u-pb-3">
-                <pre class="c-scss">._objects.media.scss</pre>
-                <button class="c-styleguide-toggle js-show-hide" data-target-selector=".js-snippet-media">
-                    {% include symbol.html value="right" %} HTML snippet
-                </button>
-                <div class="js-snippet-media is-hidden">
-                    {% highlight html linenos=table %}
-                        {% include styleguide-media.html %}
-                    {% endhighlight %}
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="c-row c-row--lg c-row--alpha">
-    <div class="o-container">
+<section id="cards" class="l-Row">
+    <div class="l-Container">
         <h2 class="c-styleguide-title">Cards</h2>
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item u-1-of-1 u-2-of-3-bp4">
+        <div class="l-Grid l-Grid--gutter">
+            <div class="l-Grid__item">
                 {% include styleguide-cards.html %}
-            </div>
-            <div class="o-grid__item u-1-of-1 u-pb-3">
-                <pre class="c-scss">._components.cards.scss</pre>
-                <button class="c-styleguide-toggle js-show-hide" data-target-selector=".js-snippet-cards">
-                    {% include symbol.html value="right" %} HTML snippet
-                </button>
-                <div class="js-snippet-cards is-hidden">
-                    {% highlight html linenos=table %}
-                        {% include styleguide-cards.html %}
-                    {% endhighlight %}
-                </div>
             </div>
         </div>
     </div>

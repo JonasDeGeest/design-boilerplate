@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 gulp.task('default', function (callback) {
   rs('dependencies',
   'symbols',
-  'scss',
+  'css',
   'js',
   'js-vendor',
   'jekyll--build',

@@ -1,0 +1,16 @@
+/*
+    Component: Header
+    ---
+    Application header styles
+*/
+
+.itp-Header {
+    padding: var(--spacingBase) var(--spacingBase) 0;
+    box-shadow: 0 0 50px var(--colorNeutral100);
+}
+
+@media(--bp3) {
+    .itp-Header {
+        padding: var(--spacingLarge) var(--spacingLarge) var(--spacingBase);
+    }
+}

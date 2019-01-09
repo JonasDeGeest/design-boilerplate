@@ -1,0 +1,6 @@
+/**
+ * Theme page custom properties
+ */
+ :root {
+  --htmlOverflowY:                       hidden;
+}

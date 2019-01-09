@@ -14,7 +14,10 @@
     <title>{{ site.title }}</title>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="{{ site.github.url }}/css/screen.css">
+    <link rel="stylesheet" href="{{ site.github.url }}/css/style.css">
+    {% if page.section == 'styleguide' %}
+        <link rel="stylesheet" href="{{ site.github.url }}/css/styleguide.css">
+    {% endif %}
 
     <link rel="icon" href="/favicon.png">
     <!--

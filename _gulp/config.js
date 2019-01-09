@@ -14,12 +14,29 @@ module.exports = {
     },
     cssDest: path + 'css/',
     jekyllCssDes: path + '_site/css/',
-    prefix: [ // Autoprefixer supported browsers
+    browsers: [ // Autoprefixer supported browsers
       'last 2 versions',
       'ie 9-11',
       'ios 8-10',
       'android 4-5'
     ]
+  },
+
+  css: {
+    src: path + 'src/*.css',
+    watch: path + 'src/**/*.css',
+    settings: {
+      stage: 1,
+      browsers: [ // Autoprefixer supported browsers
+        'last 2 versions',
+        'ie 11',
+        'ios 8-10',
+        'android 4-5'
+      ]
+    },
+    concatFilename: 'build.css',
+    cssDest: path + 'css/',
+    jekyllCssDes: path + '_site/css/'
   },
 
   js: {

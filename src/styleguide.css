@@ -1,0 +1,34 @@
+/*
+    Styleguide
+    ---
+    Styleguide specific styles, etc.
+*/
+
+.s-Navigation {
+    height: 100%;
+    padding: var(--spacingLarge) var(--spacingBase) 0;
+}
+
+    .s-Navigation__list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .s-Navigation__item {
+        margin-bottom: var(--spacingBase);
+    }
+
+    .s-Navigation__link {
+        text-decoration: none;
+    }
+
+@media(--bp3) {
+    .s-Navigation {
+        padding: var(--spacingLarge) var(--spacingLarge) 0;
+    }
+}
+
+.s-SectionTitle {
+    color: var(--colorNeutral300);
+    font-size: calc(var(--ms0) / var(--fontSizePrimary) * 1rem);
+}

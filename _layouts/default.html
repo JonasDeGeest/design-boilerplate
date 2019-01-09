@@ -3,20 +3,28 @@
 
 {% include head.html %}
 
-<body{% if page.section %} class="c-{{ page.section }}"{% endif%}>
+<body class="l-Frame">
 
     <!-- Deprecated browser alert -->
     {% include alert-outdated-browser.html %}
     <!-- End deprecated browser alert -->
 
     <!-- Page header -->
-    {% include page-header.html %}
+    <header class="l-Frame__header">
+        {% include page-header.html %}
+    </header>
     <!-- End page header -->
 
-    {{ content }}
+    <div class="l-Frame__body">
+        <div class="l-Frame__main">
+            {{ content }}
+        </div>
+    </div>
 
     <!-- Page footer -->
-    {% include page-footer.html %}
+    <footer class="l-Frame__footer">
+        {% include page-footer.html %}
+    </footer>
     <!-- End page footer -->
 
     <!-- Footer javascript -->

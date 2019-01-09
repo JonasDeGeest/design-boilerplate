@@ -1,0 +1,25 @@
+/*
+    Component: Navigation
+    ---
+    Site navigation
+*/
+
+.itp-Navigation {
+    float: right;
+    margin-top: .25rem;
+}
+
+    .itp-Navigation__list {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .itp-Navigation__item {
+        margin-left: 1rem;
+    }
+
+    .itp-Navigation__link {
+        text-decoration: none;
+    }

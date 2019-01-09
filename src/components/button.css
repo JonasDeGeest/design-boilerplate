@@ -1,0 +1,120 @@
+/*
+    Component: Button
+    ---
+    Button styles, sizes, etc.
+*/
+
+/**
+ *  1. The user agent may consider touches that begin on the element
+ *     only for the purposes of scrolling and continuous zooming.
+ *  2. Reset unusual Firefox-on-Android default style.
+ *     see https://github.com/necolas/normalize.css/issues/214
+ *  3. Sequences of whitespace will collapse into a single whitespace.
+ *     Text will never wrap to the next line.
+ *     The text continues on the same line until a <br> tag is encountered.
+ *  4. Controls the application of anti-aliasing when fonts are rendered.
+ *     Webkit & Firefox implements.
+ *     Works only on Mac OS X platform.
+ */
+
+.itp-Button {
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation; /* [1] */
+  background-image: none; /* [2] */
+  white-space: nowrap; /* [3] */
+  border-radius: calc(var(--radius));
+  border-style: solid;
+  border-width: 0;
+  transition-duration: var(--animationDurationPrimary);
+  transition-timing-function: var(--animationEasingPrimary);
+  transition-property: background, color, border;
+  outline: none;
+  line-height: normal;
+  appearance: none;
+  box-shadow: none;
+  -webkit-font-smoothing: antialiased; /* [4] */
+  -moz-osx-font-smoothing: grayscale; /* [4] */
+  font-family: var(--fontFamilyPrimary);
+  font-weight: var(--fontWeightSecondary);
+  text-decoration: none;
+}
+
+.itp-Button:hover {
+  text-decoration: none;
+}
+
+.itp-Button[disabled],
+.itp-Button[disabled]:hover {
+  background: var(--colorNeutral100);
+  color: var(--colorNeutral500);
+  border-color: var(--colorNeutral100);
+}
+
+/*
+  Button Sizes
+*/
+
+.itp-Button--sm {
+  font-size: calc(var(--ms-3) / var(--fontSizePrimary) * 1rem);
+  padding: .5rem 1rem;
+}
+
+.itp-Button--md {
+  font-size: calc(var(--ms-1) / var(--fontSizePrimary) * 1rem);
+  padding: .75rem 1.25rem;
+}
+
+.itp-Button--lg {
+  font-size: calc(var(--ms0) / var(--fontSizePrimary) * 1rem);
+  padding: 1rem 2rem;
+}
+
+/*
+  Button Types
+*/
+
+.itp-Button--primary,
+.itp-Button--primary:visited {
+  background-color: var(--colorPrimary);
+  color: var(--colorWhite);
+}
+
+.itp-Button--primary:hover,
+.itp-Button--primary:focus {
+  background-color: var(--colorPrimary500);
+  color: var(--colorWhite);
+}
+
+.itp-Button--primary:active {
+  background-color: var(--colorPrimary);
+}
+
+.itp-Button--secondary,
+.itp-Button--secondary:visited {
+  background-color: var(--colorPrimary100);
+  color: var(--colorPrimary);
+}
+
+.itp-Button--secondary:hover,
+.itp-Button--secondary:focus {
+  background-color: var(--colorPrimary200);
+  color: var(--colorPrimary);
+}
+
+.itp-Button---secondary:active {
+  background-color: var(--colorPrimary100);
+}
+
+.itp-Button---link {
+  border-radius: 0;
+  background-color: transparent;
+  color: var(--colorPrimary);
+}
+
+.itp-Button--link:hover,
+.itp-Button--link:focus {
+  color: var(--colorPrimary600);
+}
