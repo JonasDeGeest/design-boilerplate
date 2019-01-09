@@ -8,6 +8,7 @@
     color: var(--colorPrimary);
     font-weight: var(--fontWeightTertiary);
     font-size: calc(var(--ms7) / var(--fontSizePrimary) * 1rem);
+    border-bottom: var(--borderWidth) var(--borderStyle) var(--colorNeutral100);
 }
 
 @media (--bp4) {
