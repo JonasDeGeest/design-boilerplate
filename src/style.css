@@ -2,7 +2,7 @@
 
 /* Custom properties */
 @import '../vendor/itp-css/src/properties/all.css';
-@import 'properties/page.css';
+@import 'properties/theme.css';
 
 /* Normalize */
 @import '../vendor/normalize.css/normalize.css';
@@ -20,8 +20,10 @@
 @import '../vendor/itp-css/src/layout/grid.css';
 @import '../vendor/itp-css/src/layout/row.css';
 @import '../vendor/itp-css/src/layout/table.css';
+@import '../vendor/itp-css/src/layout/media-embed.css';
 
 /* Components */
+@import 'components/alert.css';
 @import 'components/brand.css';
 @import 'components/button.css';
 @import 'components/header.css';

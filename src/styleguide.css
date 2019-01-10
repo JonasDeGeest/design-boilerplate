@@ -16,6 +16,7 @@
 
     .s-Navigation__item {
         margin-bottom: var(--spacingBase);
+        font-size: calc(var(--ms-1) / var(--fontSizePrimary) * 1rem);
     }
 
     .s-Navigation__link {
@@ -31,4 +32,59 @@
 .s-SectionTitle {
     color: var(--colorNeutral300);
     font-size: calc(var(--ms0) / var(--fontSizePrimary) * 1rem);
+    margin-bottom: var(--spacingLarge);
+}
+
+.s-Swatch {
+    height: 120px;
+    margin-bottom: var(--spacingBase);
+}
+
+.s-SwatchCaption {
+    font-size: calc(var(--ms-1) / var(--fontSizePrimary) * 1rem);
+}
+
+.s-SwatchNeutral100 {
+    background-color: var(--colorNeutral100);
+}
+.s-SwatchNeutral200 {
+    background-color: var(--colorNeutral200);
+}
+.s-SwatchNeutral300 {
+    background-color: var(--colorNeutral300);
+}
+.s-SwatchNeutral400 {
+    background-color: var(--colorNeutral400);
+}
+.s-SwatchNeutral500 {
+    background-color: var(--colorNeutral500);
+}
+
+.s-SwatchPrimary100 {
+    background-color: var(--colorPrimary100);
+}
+.s-SwatchPrimary200 {
+    background-color: var(--colorPrimary200);
+}
+.s-SwatchPrimary300 {
+    background-color: var(--colorPrimary300);
+}
+.s-SwatchPrimary400 {
+    background-color: var(--colorPrimary400);
+}
+.s-SwatchPrimary500 {
+    background-color: var(--colorPrimary500);
+}
+.s-SwatchPrimary {
+    background-color: var(--colorPrimary);
+}
+
+.s-GridCell {
+    margin-bottom: calc(var(--spacingBase) * 2);
+    padding: var(--spacingBase);
+    background-color: var(--colorNeutral100);
+    border-radius: var(--radius);
+    color: var(--colorNeutral400);
+    font-size: 13px;
+    text-align: center;
 }

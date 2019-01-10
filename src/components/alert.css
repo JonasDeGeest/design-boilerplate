@@ -1,0 +1,69 @@
+/*
+    Components: Alerts
+    ---
+    Alerts: contextual feedback messages for typical user actions.
+
+ *  1. The element is positioned relative to its normal position, so "left: 20" adds 20
+ *     pixels to the element's LEFT position.
+ *
+ */
+
+.itp-Alert{
+    position: relative; /* [1] */
+    padding: 1rem 1rem 0;
+    margin-bottom: 1rem;
+    border-radius: var(--radius);
+}
+
+    .itp-Alert__link {
+        text-decoration: underline;
+        font-weight: var(--fontWeightSecondary);
+        color: var(--colorNeutral500);
+    }
+
+    .itp-Alert--error .itp-Alert__link {
+        color: var(--colorError);
+    }
+
+    .itp-Alert--success .itp-Alert__link {
+        color: var(--colorSuccess);
+    }
+
+    .itp-Alert__link:hover,
+    .itp-Alert__link:focus {
+        text-decoration: none;
+    }
+
+    .itp-Alert__close {
+        position: absolute;
+        top: .25rem;
+        right: .5rem;
+        line-height: 1;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.itp-Alert--error {
+    color: var(--colorError);
+    border: var(--borderWidth) var(--borderStyle) var(--colorError);
+}
+
+.itp-Alert--success {
+    color: var(--colorSuccess);
+    border: var(--borderWidth) var(--borderStyle) var(--colorSuccess);
+}
+
+.itp-Alert--notice {
+    color: var(--colorNotice);
+    border: var(--borderWidth) var(--borderStyle) var(--colorNotice);
+}
+
+.itp-AlertInline {
+    display: block;
+    text-align: right;
+    @include text-dimensions($ms-2,1);
+}
+
+.itp-AlertInline--error {
+    color: palette(color-error);
+}

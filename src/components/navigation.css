@@ -17,7 +17,8 @@
     }
 
     .itp-Navigation__item {
-        margin-left: 1rem;
+        margin-left: 2rem;
+        font-size: calc(var(--ms-1) / var(--fontSizePrimary) * 1rem);
     }
 
     .itp-Navigation__link {

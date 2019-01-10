@@ -1,37 +1,37 @@
 ---
 layout: default
 title: Grid
-section: grid
+section: styleguide
 ---
-<div class="c-row c-row--lg c-row--alpha">
-    <div class="o-container">
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item">
+<div class="l-Row">
+    <div class="l-Container">
+        <div class="l-Grid l-Grid--gutter">
+            <div class="l-Grid__item">
                 <h1 class="itp-PageTitle u-mb-0">{{ page.title }}</h1>
             </div>
         </div>
     </div>
 </div>
-<section class="c-row c-row--alpha">
-    <div class="o-container">
-        <h2 class="c-styleguide-title">Flexbox grid: auto columns</h2>
+<section class="l-Row">
+    <div class="l-Container">
+        <h2 class="s-SectionTitle">Flexbox grid: auto columns</h2>
     </div>
 
     <!-- auto column -->
-    <div class="o-container">
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item">
-                <div class="c-card c-card--alpha">
+    <div class="l-Container">
+        <div class="l-Grid l-Grid--gutter">
+            <div class="l-Grid__item">
+                <div class="s-GridCell">
                     auto width
                 </div>
             </div>
-            <div class="o-grid__item">
-                <div class="c-card c-card--alpha">
+            <div class="l-Grid__item">
+                <div class="s-GridCell">
                     auto width
                 </div>
             </div>
-            <div class="o-grid__item">
-                <div class="c-card c-card--alpha">
+            <div class="l-Grid__item">
+                <div class="s-GridCell">
                     auto width
                 </div>
             </div>
@@ -40,20 +40,20 @@ section: grid
     <!-- End auto column -->
 
     <!-- auto & 50% column -->
-    <div class="o-container">
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item">
-                <div class="c-card c-card--alpha">
+    <div class="l-Container">
+        <div class="l-Grid l-Grid--gutter">
+            <div class="l-Grid__item">
+                <div class="s-GridCell">
                     auto width
                 </div>
             </div>
-            <div class="o-grid__item u-1-of-2">
-                <div class="c-card c-card--alpha">
+            <div class="l-Grid__item u-Width1of2">
+                <div class="s-GridCell">
                     50%
                 </div>
             </div>
-            <div class="o-grid__item">
-                <div class="c-card c-card--alpha">
+            <div class="l-Grid__item">
+                <div class="s-GridCell">
                     auto width
                 </div>
             </div>
@@ -61,19 +61,21 @@ section: grid
     </div>
     <!-- End auto & 50% column -->
 
-    <div class="o-container">
-        <h2 class="c-styleguide-title">Flexbox grid: breakpoint columns</h2>
+    <br>
+
+    <div class="l-Container">
+        <h2 class="s-SectionTitle">Flexbox grid: breakpoint columns</h2>
     </div>
     <!-- 1-of-2 column -->
-    <div class="o-container">
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item u-1-of-2">
-                <div class="c-card c-card--alpha">
+    <div class="l-Container">
+        <div class="l-Grid l-Grid--gutter">
+            <div class="l-Grid__item u-Width1of2">
+                <div class="s-GridCell">
                    50%
                 </div>
             </div>
-            <div class="o-grid__item u-1-of-2">
-                <div class="c-card c-card--alpha">
+            <div class="l-Grid__item u-Width1of2">
+                <div class="s-GridCell">
                    50%
                 </div>
             </div>
@@ -82,20 +84,20 @@ section: grid
     <!-- End 1-of-2 column -->
 
     <!-- 1-of-3 column -->
-    <div class="o-container">
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item u-1-of-2 u-1-of-3-bp3">
-                <div class="c-card c-card--alpha">
+    <div class="l-Container">
+        <div class="l-Grid l-Grid--gutter">
+            <div class="l-Grid__item u-Width1of2 u-Width1of3--bp3">
+                <div class="s-GridCell">
                     50% | 33%
                 </div>
             </div>
-            <div class="o-grid__item u-1-of-2 u-1-of-3-bp3">
-                <div class="c-card c-card--alpha">
+            <div class="l-Grid__item u-Width1of2 u-Width1of3--bp3">
+                <div class="s-GridCell">
                     50% | 33%
                 </div>
             </div>
-            <div class="o-grid__item u-1-of-1 u-1-of-3-bp3">
-                <div class="c-card c-card--alpha">
+            <div class="l-Grid__item u-Width1of3--bp3">
+                <div class="s-GridCell">
                     100% | 33%
                 </div>
             </div>
@@ -104,15 +106,15 @@ section: grid
     <!-- End 1-of-3 column -->
 
     <!-- 1-of-3 + 2-of-3 column -->
-    <div class="o-container">
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item u-1-of-1 u-1-of-3-bp3">
-                <div class="c-card c-card--alpha">
+    <div class="l-Container">
+        <div class="l-Grid l-Grid--gutter">
+            <div class="l-Grid__item u-Width1of3--bp3">
+                <div class="s-GridCell">
                     100% | 33%
                 </div>
             </div>
-            <div class="o-grid__item u-1-of-1 u-2-of-3-bp3">
-                <div class="c-card c-card--alpha">
+            <div class="l-Grid__item u-Width2of3--bp3">
+                <div class="s-GridCell">
                     100% | 66%
                 </div>
             </div>
@@ -121,30 +123,30 @@ section: grid
     <!-- End 1-of-3 + 2-of-3 column -->
 
     <!-- 1-of-5 column -->
-    <div class="o-container">
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item u-1-of-1 u-1-of-5-bp4">
-                <div class="c-card c-card--alpha">
+    <div class="l-Container">
+        <div class="l-Grid l-Grid--gutter">
+            <div class="l-Grid__item u-Width1of5--bp4">
+                <div class="s-GridCell">
                     100% | 20%
                 </div>
             </div>
-            <div class="o-grid__item u-1-of-1 u-1-of-5-bp4">
-                <div class="c-card c-card--alpha">
+            <div class="l-Grid__item u-Width1of5--bp4">
+                <div class="s-GridCell">
                     100% | 20%
                 </div>
             </div>
-            <div class="o-grid__item u-1-of-1 u-1-of-5-bp4">
-                <div class="c-card c-card--alpha">
+            <div class="l-Grid__item u-Width1of5--bp4">
+                <div class="s-GridCell">
                     100% | 20%
                 </div>
             </div>
-            <div class="o-grid__item u-1-of-1 u-1-of-5-bp4">
-                <div class="c-card c-card--alpha">
+            <div class="l-Grid__item u-Width1of5--bp4">
+                <div class="s-GridCell">
                     100% | 20%
                 </div>
             </div>
-            <div class="o-grid__item u-1-of-1 u-1-of-5-bp4">
-                <div class="c-card c-card--alpha">
+            <div class="l-Grid__item u-Width1of5--bp4">
+                <div class="s-GridCell">
                     100% | 20%
                 </div>
             </div>
@@ -153,15 +155,15 @@ section: grid
     <!-- End 1-of-5 column -->
 
     <!-- 2-of-5 + 3-of-5 column -->
-    <div class="o-container">
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item u-1-of-1 u-2-of-5-bp2">
-                <div class="c-card c-card--alpha">
+    <div class="l-Container">
+        <div class="l-Grid l-Grid--gutter">
+            <div class="l-Grid__item u-Width2of5--bp2">
+                <div class="s-GridCell">
                     100% | 30%
                 </div>
             </div>
-            <div class="o-grid__item u-1-of-1 u-3-of-5-bp2">
-                <div class="c-card c-card--alpha">
+            <div class="l-Grid__item u-Width3of5--bp2">
+                <div class="s-GridCell">
                     100% | 60%
                 </div>
             </div>
@@ -170,10 +172,10 @@ section: grid
     <!-- End 2-of-5 + 3-of-5 column -->
 
     <!-- 3-of-5 centered column -->
-    <div class="o-container">
-        <div class="o-grid o-grid--gutter o-justify-center">
-            <div class="o-grid__item u-1-of-1 u-3-of-5-bp3">
-                <div class="c-card c-card--alpha">
+    <div class="l-Container">
+        <div class="l-Grid l-Grid--gutter u-FlexJustifyCenter">
+            <div class="l-Grid__item u-Width3of5--bp3">
+                <div class="s-GridCell">
                     100% | 60% centered
                 </div>
             </div>
@@ -182,35 +184,35 @@ section: grid
     <!-- End 3-of-5 centered column -->
 
     <!-- 1-of-6 column -->
-    <div class="o-container">
-        <div class="o-grid o-grid--gutter">
-            <div class="o-grid__item u-1-of-1 u-1-of-3-bp2 u-1-of-6-bp4">
-                <div class="c-card c-card--alpha">
+    <div class="l-Container">
+        <div class="l-Grid l-Grid--gutter">
+            <div class="l-Grid__item u-Width1of3--bp2 u-Width1of6--bp4">
+                <div class="s-GridCell">
                     100% | 33% | 16%
                 </div>
             </div>
-            <div class="o-grid__item u-1-of-1 u-1-of-3-bp2 u-1-of-6-bp4">
-                <div class="c-card c-card--alpha">
+            <div class="l-Grid__item u-Width1of3--bp2 u-Width1of6--bp4">
+                <div class="s-GridCell">
                     100% | 33% | 16%
                 </div>
             </div>
-            <div class="o-grid__item u-1-of-1 u-1-of-3-bp2 u-1-of-6-bp4">
-                <div class="c-card c-card--alpha">
+            <div class="l-Grid__item u-Width1of3--bp2 u-Width1of6--bp4">
+                <div class="s-GridCell">
                     100% | 33% | 16%
                 </div>
             </div>
-            <div class="o-grid__item u-1-of-1 u-1-of-3-bp2 u-1-of-6-bp4">
-                <div class="c-card c-card--alpha">
+            <div class="l-Grid__item u-Width1of3--bp2 u-Width1of6--bp4">
+                <div class="s-GridCell">
                     100% | 33% | 16%
                 </div>
             </div>
-            <div class="o-grid__item u-1-of-1 u-1-of-3-bp2 u-1-of-6-bp4">
-                <div class="c-card c-card--alpha">
+            <div class="l-Grid__item u-Width1of3--bp2 u-Width1of6--bp4">
+                <div class="s-GridCell">
                     100% | 33% | 16%
                 </div>
             </div>
-            <div class="o-grid__item u-1-of-1 u-1-of-3-bp2 u-1-of-6-bp4">
-                <div class="c-card c-card--alpha">
+            <div class="l-Grid__item u-Width1of3--bp2 u-Width1of6--bp4">
+                <div class="s-GridCell">
                     100% | 33% | 16%
                 </div>
             </div>

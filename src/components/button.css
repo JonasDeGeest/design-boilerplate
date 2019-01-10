@@ -49,7 +49,7 @@
 .itp-Button[disabled],
 .itp-Button[disabled]:hover {
   background: var(--colorNeutral100);
-  color: var(--colorNeutral500);
+  color: var(--colorNeutral400);
   border-color: var(--colorNeutral100);
 }
 

@@ -16,3 +16,8 @@
         font-size: calc(var(--ms10) / var(--fontSizePrimary) * 1rem);
     }
 }
+
+.itp-PageTitleCaption {
+    color: var(--colorNeutral300);
+    font-weight: var(--fontWeightSecondary);
+}
