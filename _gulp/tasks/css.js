@@ -8,7 +8,6 @@ var gulp = require('gulp'),
     postcss = require('gulp-postcss'),
     postcssImport = require('postcss-import'),
     postcssPresetEnv = require('postcss-preset-env'),
-    autoprefixer = require('autoprefixer'),
     filesize = require('gulp-filesize'),
     browserSync = require('browser-sync'),
     sourcemaps  = require('gulp-sourcemaps');

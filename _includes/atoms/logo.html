@@ -1,0 +1,15 @@
+{% if page.section != 'home' %}
+<p class="itp-Logo">
+  <a href="/index.html" class="itp-Logo__link">
+    {% else %}
+    <h1 class="itp-Logo">
+      {% endif %}
+
+      {{site.title}}
+
+      {% if page.section != 'home' %}
+  </a>
+</p>
+{% else %}
+</h1>
+{% endif %}

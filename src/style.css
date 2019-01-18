@@ -8,6 +8,9 @@
 @import '../vendor/normalize.css/normalize.css';
 @import '../vendor/itp-css/src/normalize.css';
 
+/* Fonts */
+@import 'fonts/embed.css'
+
 /* Global */
 @import '../vendor/itp-css/src/global/form.css';
 @import '../vendor/itp-css/src/global/image.css';
@@ -24,10 +27,10 @@
 
 /* Components */
 @import 'components/alert.css';
-@import 'components/brand.css';
 @import 'components/button.css';
 @import 'components/header.css';
 @import 'components/input.css';
+@import 'components/logo.css';
 @import 'components/navigation.css';
 @import 'components/page-title.css';
 

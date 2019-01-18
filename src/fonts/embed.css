@@ -1,0 +1,28 @@
+/*
+    Font embedding
+    ---
+    Embedding the Flama webfont
+*/
+@font-face {
+    font-family: 'flama';
+    src: url("../fonts/Flama-Book.woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'flama';
+    src: url("../fonts/Flama-Semibold.woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'flama semicondensed';
+    src: url("../fonts/FlamaSemicondensed-Bold.woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'flama semicondensed';
+    src: url("../fonts/FlamaSemicondensed-Book.woff");
+    font-weight: normal;
+}

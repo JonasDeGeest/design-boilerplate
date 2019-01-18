@@ -7,21 +7,6 @@ var path = '';
 
 module.exports = {
 
-  scss: {
-    src: path + 'scss/**/*.scss',
-    settings: {
-      outputStyle: 'compressed'
-    },
-    cssDest: path + 'css/',
-    jekyllCssDes: path + '_site/css/',
-    browsers: [ // Autoprefixer supported browsers
-      'last 2 versions',
-      'ie 9-11',
-      'ios 8-10',
-      'android 4-5'
-    ]
-  },
-
   css: {
     src: path + 'src/*.css',
     watch: path + 'src/**/*.css',

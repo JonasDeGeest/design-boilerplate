@@ -1,0 +1,14 @@
+<nav class="itp-Navigation">
+    <ul class="itp-Navigation__list">
+        <!-- Manually define homepage link -->
+        <li class="itp-Navigation__item{% if page.section == "home" %} isSelected{% endif %}">
+            <a href="index.html" class="itp-Navigation__link">Home</a>
+        </li>
+        <li class="itp-Navigation__item{% if page.section == "styleguide" %} isSelected{% endif %}">
+            <a href="styleguide.html" class="itp-Navigation__link">Styleguide</a>
+        </li>
+        <li class="itp-Navigation__item{% if page.section == "grid" %} isSelected{% endif %}">
+            <a href="grid.html" class="itp-Navigation__link">Grid</a>
+        </li>
+    </ul>
+</nav>
