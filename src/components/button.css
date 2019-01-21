@@ -37,9 +37,11 @@
   box-shadow: none;
   -webkit-font-smoothing: antialiased; /* [4] */
   -moz-osx-font-smoothing: grayscale; /* [4] */
-  font-family: var(--fontFamilyPrimary);
+  font-family: var(--fontFamilySecondary);
   font-weight: var(--fontWeightSecondary);
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .itp-Button:hover {
@@ -54,26 +56,26 @@
 }
 
 /*
-  Button Sizes
+  Modifiers: Button Sizes
 */
 
 .itp-Button--sm {
-  font-size: calc(var(--ms-3) / var(--fontSizePrimary) * 1rem);
   padding: .5rem 1rem;
+  font-size: calc(var(--ms-3) / var(--fontSizePrimary) * 1rem);
 }
 
 .itp-Button--md {
-  font-size: calc(var(--ms-1) / var(--fontSizePrimary) * 1rem);
   padding: .75rem 1.25rem;
+  font-size: calc(var(--ms-2) / var(--fontSizePrimary) * 1rem);
 }
 
 .itp-Button--lg {
-  font-size: calc(var(--ms0) / var(--fontSizePrimary) * 1rem);
   padding: 1rem 2rem;
+  font-size: calc(var(--ms-1) / var(--fontSizePrimary) * 1rem);
 }
 
 /*
-  Button Types
+  Modifiers: Button Types
 */
 
 .itp-Button--primary,
@@ -105,6 +107,24 @@
 }
 
 .itp-Button---secondary:active {
+  background-color: var(--colorPrimary100);
+}
+
+.itp-Button--outline,
+.itp-Button--outline:visited {
+  border: 1px solid var(--colorNeutral200);
+  background-color: var(--colorWhite);
+  color: var(--colorNeutral);
+}
+
+.itp-Button--outline:hover,
+.itp-Button--outline:focus {
+  border-color: var(--colorPrimary);
+  background-color: var(--colorPrimary);
+  color: var(--colorWhite);
+}
+
+.itp-Button---outline:active {
   background-color: var(--colorPrimary100);
 }
 

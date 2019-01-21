@@ -1,0 +1,62 @@
+/*
+    Components: Select
+    ---
+    Native select styles
+*/
+/*
+ *  1. When wrapped inside a FormItem component, the Select component should placed second.
+*/
+.itp-Select {
+  position: relative;
+  order: 2; /* [1] */
+  appearance: none;
+  box-sizing: border-box;
+  display: block;
+  outline: none;
+  width: 100%;
+  vertical-align: middle;
+  border: var(--borderWidth) var(--borderStyle) var(--colorNeutral200);
+  border-radius: var(--radius);
+  color: palette(color-neutral, dark);
+  background: url('../img/svg/icon-down.svg') no-repeat center right 1rem transparent;
+  background-size: .865rem;
+  line-height: normal;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.itp-Select:focus {
+  color: var(--colorPrimary);
+  border-color: var(--colorPrimary);
+}
+
+.itp-Select:focus + label {
+  color: var(--colorPrimary);
+}
+
+.itp-Select.hasError {
+  border-color: var(--colorError);
+}
+
+.itp-Select.hasError:focus {
+  border-color: var(--colorError);
+}
+
+/*
+ * Modifiers: Input sizes
+ */
+
+.itp-Select--sm {
+  padding: .5rem;
+  font-size: calc(var(--ms-2) / var(--fontSizePrimary) * 1rem);
+}
+
+.itp-Select--md {
+  padding: .75rem;
+  font-size: calc(var(--ms0) / var(--fontSizePrimary) * 1rem);
+}
+
+.itp-Select--lg {
+  padding: 1rem;
+  font-size: calc(var(--ms1) / var(--fontSizePrimary) * 1rem);
+}

@@ -1,0 +1,15 @@
+{% if include.url %}
+    <a role="button" href="{{ include.url }}" class="itp-Button itp-Button--{{ include.size }} itp-Button--{{ include.type }}">
+        {{ include.label }}
+        {% if include.icon %}
+            {% include atoms/symbol.html value=include.icon class="itp-Button__symbol" %}
+        {% endif %}
+    </a>
+{% else %}
+    <button type="button" name="{{ include.label }}" class="itp-Button itp-Button--{{ include.size }} itp-Button--{{ include.type }}">
+        {{ include.label }}
+        {% if include.icon %}
+            {% include atoms/symbol.html value=include.icon class="itp-Button__symbol" %}
+        {% endif %}
+    </button>
+{% endif %}

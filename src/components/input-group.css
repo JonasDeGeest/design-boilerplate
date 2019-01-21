@@ -1,0 +1,37 @@
+/*
+  Components: Input Group
+  ---
+  Easily extend form controls by adding text, buttons, ... on either side of textual inputs, custom selects, and custom file inputs.
+*/
+.itp-InputGroup {
+  position: relative;
+  order: 2;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+.itp-InputGroup > .itp-InputText {
+  z-index: 1;
+}
+
+  .itp-InputGroup__prepend {
+    position: relative;
+    display: flex;
+    order: 0;
+    margin-right: -1px;
+    color: var(--colorNeutral);
+  }
+
+  .itp-InputGroup__append {
+    position: relative;
+    display: flex;
+    order: 2;
+    margin-left: -1px;
+    color: var(--colorNeutral);
+  }
+
+  .itp-InputGroup__label {
+    padding: .75rem 1rem;
+    border: 1px var(--borderStyle) var(--colorNeutral200);
+  }

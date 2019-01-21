@@ -1,0 +1,141 @@
+/*
+    Components: Input Text
+    ---
+    Input styles & sizes.
+*/
+/**
+ *  1. The appearance property defines how elements appear by default.
+ *     By setting the value to none the default appearance can be entirely redefined using other CSS properties.
+ *
+ *  2. Controls the application of anti-aliasing when fonts are rendered.
+ *     Both Webkit & Firefox implements.
+ *     Works only on Mac OS X platform.
+ *
+ *  3. When wrapped inside a FormItem component, the InputText component should placed second.
+ *
+ *  4. When wrapped inside a FormItem component, the InputHelper component should placed third.
+ */
+.itp-InputText {
+  appearance: none; /* [1] */
+  -webkit-font-smoothing: antialiased; /* [2] */
+  -moz-osx-font-smoothing: grayscale; /* [2] */
+  order: 2; /* [3] */
+  background-color: var(--colorWhite);
+  border-radius: var(--radius);
+  border: var(--borderWidth) var(--borderStyle) var(--colorNeutral200);
+  color: var(--colorBlack);
+  margin: 0;
+  width: 100%;
+  display: block;
+  outline: none;
+  line-height: normal;
+  transition: all var(--animationDurationSecondary) var(--animationEasingPrimary);
+}
+
+.itp-InputText:focus {
+  color: var(--colorPrimary);
+  border-color: var(--colorPrimary);
+}
+
+.itp-InputText:focus + label {
+  color: var(--colorPrimary);
+}
+
+.itp-InputText:disabled {
+  background: var(--colorNeutral100);
+  color: var(--colorNeutral500);
+  border-color: var(--colorNeutral100);
+}
+
+.itp-InputText:disabled + label {
+  color: var(--colorNeutral300);
+}
+
+.itp-InputText.hasError {
+  color: var(--colorError);
+  border-color: var(--colorError);
+}
+
+.itp-InputText.hasError:focus + label {
+  color: var(--colorError);
+}
+
+.itp-InputHelper {
+  display: block;
+  order: 3; /* [4] */
+  margin-top: .25rem;
+  color: var(--colorNeutral);
+  font-size: calc(var(--ms-1) / var(--fontSizePrimary) * 1rem);
+}
+
+.itp-InputHelper.hasError {
+  color: var(--colorError);
+}
+
+/*
+ * Modifiers: Input sizes
+ */
+
+.itp-InputText--sm {
+  padding: .5rem;
+  font-size: calc(var(--ms-2) / var(--fontSizePrimary) * 1rem);
+}
+
+.itp-InputText--md {
+  padding: .75rem;
+  font-size: calc(var(--ms0) / var(--fontSizePrimary) * 1rem);
+}
+
+.itp-InputText--lg {
+  padding: 1rem;
+  font-size: calc(var(--ms1) / var(--fontSizePrimary) * 1rem);
+}
+
+.itp-InputRadio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  @include padding-lr(1.5, 0);
+
+  >label {
+    margin: 0;
+    line-height: 1.5rem;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-right: .35rem;
+      background-color: palette(color-neutral, x-light);
+      border-radius: (var(--radius) * 50);
+    }
+  }
+
+  >input {
+    position: absolute;
+    left: -2rem;
+    top: 0;
+  }
+
+  >input:checked+label::before {
+    background: palette(color-alpha) url('../img/svg/icon-radio-white.svg') no-repeat center;
+    background-size: .5rem;
+  }
+
+  >input:disabled+label {
+    color: var(--colorNeutral);
+  }
+}
+
+.itp-InputRadio--inline {
+  display: inline-flex;
+  width: auto;
+  margin-right: 1rem;
+}

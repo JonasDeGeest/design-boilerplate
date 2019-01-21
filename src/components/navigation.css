@@ -3,24 +3,34 @@
     ---
     Site navigation
 */
-
 .itp-Navigation {
-    float: right;
-    margin-top: .25rem;
+  float: right;
+  margin-top: .25rem;
 }
 
-    .itp-Navigation__list {
-        display: flex;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
+  .itp-Navigation__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
-    .itp-Navigation__item {
-        margin-left: 2rem;
-        font-size: calc(var(--ms-1) / var(--fontSizePrimary) * 1rem);
-    }
+  .itp-Navigation__item {
+    margin-left: 2rem;
+    font-size: calc(var(--ms-1) / var(--fontSizePrimary) * 1rem);
+  }
 
-    .itp-Navigation__link {
-        text-decoration: none;
-    }
+  .itp-Navigation__link,
+  .itp-Navigation__link:visited {
+    color: var(--colorPrimary300);
+    text-decoration: none;
+  }
+
+  .itp-Navigation__link:hover {
+    color: var(--colorPrimary);
+    text-decoration: none;
+  }
+
+  .isSelected .itp-Navigation__link {
+    color: var(--colorPrimary);
+  }

@@ -1,84 +1,173 @@
-
-<form action="#" method="post">
-    <h3>Standard contact form </h3>
-
-    <div class="itp-Alert itp-Alert--error">
-        <p><strong>Cras sed ante</strong>. Phasellus in massa. Curabitur dolor eros, <a href="#" class="itp-Alert__link">gravida et</a>, hendrerit ac, cursus non, massa. Aliquam lorem.</p>
-        <span class="itp-Alert__close js-hide">&times;</span>
+<h3>Form components</h3>
+<div class="itp-Card itp-Card--lg itp-Card--primary">
+  <div class="itp-Card__body">
+    <div class="itp-FormItem">
+      {% include atoms/input-field.html id="text-sm" type="text" size="sm" placeholder="Example textfield" %}
+      <label for="text-sm" class="itp-Label">Text field small</label>
     </div>
+    <div class="itp-FormItem">
+      {% include atoms/input-field.html id="text-md" type="text" size="md" placeholder="Example textfield" %}
+      <label for="text-md" class="itp-Label">Text field medium</label>
+    </div>
+    <div class="itp-FormItem">
+      {% include atoms/input-field.html id="text-lg" type="text" size="lg" placeholder="Example textfield" %}
+      <label for="text-lg" class="itp-Label">Text field large</label>
+    </div>
+    <div class="itp-FormItem">
+      {% include atoms/input-field.html id="text-md-error" type="text" size="md" invalid="true" %}
+      <label for="text-md-error" class="itp-Label hasError">Errored field</label>
+      <small class="itp-InputHelper hasError">This field is required</small>
+    </div>
+    <div class="itp-FormItem">
+      {% include atoms/input-field.html id="text-md-disabled" type="text" size="md" disabled="true" %}
+      <label for="text-md-disabled" class="itp-Label">Disabled field</label>
+    </div>
+    <div class="itp-FormItem">
+      {% include atoms/input-field-append.html id="text-append" type="text" size="md" placeholder="username" append="@inthepocket.mobi" %}
+      <label for="text-append" class="itp-Label">Text field with appended element</label>
+    </div>
+    <div class="itp-FormItem">
+      {% include atoms/input-field-prepend.html id="text-prepend" type="text" size="md" placeholder="amount" prepend="€" %}
+      <label for="text-prepend" class="itp-Label">Text field with prepended element</label>
+    </div>
+    <div class="itp-FormItem">
+      {% include atoms/input-number.html value="0" %}
+      <label class="itp-Label">Number input</label>
+    </div>
+    <div class="itp-FormItem">
+      {% include atoms/input-select.html id="select-sm" size="sm" %}
+      <label for="select-sm" class="itp-Label">Select small</label>
+    </div>
+    <div class="itp-FormItem">
+      {% include atoms/input-select.html id="select-md" size="md" %}
+      <label for="select-md" class="itp-Label">Select medium</label>
+    </div>
+    <div class="itp-FormItem">
+      {% include atoms/input-select.html id="select-lg" size="lg" %}
+      <label for="select-lg" class="itp-Label">Select large</label>
+    </div>
+    <div class="itp-FormItem">
+      <div class="itp-InputCheckList">
+        {% include atoms/input-check.html id="check-01" label="Checkbox" %}
+        {% include atoms/input-check.html id="check-02" label="Checkbox" %}
+      </div>
+      <label class="itp-Label">Checkboxes</label>
+    </div>
+    <div class="itp-FormItem">
+      <div class="itp-InputCheckList">
+        {% include atoms/input-check.html id="check-03" label="Checkbox" disabled="true" %}
+        {% include atoms/input-check.html id="check-04" label="Checkbox" disabled="true" %}
+      </div>
+      <label class="itp-Label">Checkboxes disabled</label>
+    </div>
+    <div class="itp-FormItem">
+      <div class="itp-InputRadioList">
+        {% include atoms/input-radio.html id="radio-01" label="Radiobutton" %}
+        {% include atoms/input-radio.html id="radio-02" label="Radiobutton" %}
+      </div>
+      <label class="itp-Label">Radio buttons</label>
+    </div>
+    <div class="itp-FormItem">
+      <div class="itp-InputRadioList">
+        {% include atoms/input-radio.html id="radio-03" label="Radiobutton" disabled="true" %}
+        {% include atoms/input-radio.html id="radio-04" label="Radiobutton" disabled="true" %}
+      </div>
+      <label class="itp-Label">Radio buttons disabled</label>
+    </div>
+    <div class="itp-FormItem">
+      {% include atoms/input-toggle.html %}
+      <label class="itp-Label">Segmented options</label>
+    </div>
+  </div>
+</div>
 
-    <fieldset>
-        <p>
-            <label for="form-field-2" class="itp-Label">Name<abbr title="Required field">*</abbr></label>
-            <input id="form-field-2" type="text" placeholder="Full Name" class="itp-InputText itp-InputText--md" />
-        </p>
-        <p>
-            <label for="form-field-3" class="itp-Label has-error">Email address<abbr title="Required field">*</abbr></label>
-            <input id="form-field-3" class="itp-InputText itp-InputText--md has-error" type="email" placeholder="email@address.com" />
-            <span class="c-alert-inline c-alert-inline--error">This field is required.</span>
-        </p>
-        <p>
-            <label for="form-field-4" class="itp-Label">Message<abbr title="Required field">*</abbr></label>
-            <textarea class="itp-InputText itp-InputText--md" id="form-field-4" rows="5" cols="30"></textarea>
-        </p>
-        <p>
-            <input type="submit" class="itp-Button itp-Button--md itp-Button--primary" value="Send" />
-        </p>
-    </fieldset>
-</form>
+<h3>Standard contact form </h3>
+<div class="itp-Card itp-Card--lg itp-Card--primary">
+  <div class="itp-Card__body">
+    <form action="#" method="post">
+      <div class="itp-Alert itp-Alert--error">
+        <p><strong>Warning:</strong> Please provide your email address</p>
+        <span class="itp-Alert__close js-hide">&times;</span>
+      </div>
+      <div class="itp-FormItem">
+        {% include atoms/input-field.html id="form-field-2" type="text" size="md" placeholder="Full name" %}
+        <label for="form-field-2" class="itp-Label">Name</label>
+      </div>
+      <div class="itp-FormItem">
+        {% include atoms/input-field.html id="form-field-3" type="email" size="md" placeholder="email@address.com" %}
+        <label for="form-field-3" class="itp-Label hasError">Email address</label>
+        <span class="itp-InputHelper hasError">This field is required.</span>
+      </div>
+      <div class="itp-FormItem">
+        {% include atoms/input-textarea.html id="form-field-4" size="md" rows="5" %}
+        <label for="form-field-4" class="itp-Label">Message</label>
+      </div>
+      {% include atoms/button.html type="primary" size="md" label="Send" %}
+    </form>
+  </div>
+</div>
 
-<hr />
+<h3>Form built with grids</h3>
+<div class="itp-Card itp-Card--lg itp-Card--primary">
+  <div class="itp-Card__body">
+    <form action="#" method="post">
 
-<form action="#" method="post">
-    <h3>Form built with grids</h3>
-
-    <fieldset>
-        <div class="l-Grid l-Grid--gutter">
-            <p class="l-Grid__item u-Width1of2--bp3">
-                <label class="itp-Label">Name<abbr title="Required field">*</abbr></label>
-                <input type="text" class="itp-InputText itp-InputText--md" placeholder="Full Name" />
-            </p>
-            <p class="l-Grid__item u-Width1of2--bp3">
-                <label class="itp-Label">Email address<abbr title="Required field">*</abbr></label>
-                <input type="email" class="itp-InputText itp-InputText--md" placeholder="email@address.com" />
-            </p>
+      <div class="l-Grid l-Grid--gutter">
+        <div class="l-Grid__item u-Width1of2--bp3">
+          <div class="itp-FormItem">
+            {% include atoms/input-field.html id="form-field-2" type="text" size="md" placeholder="Full name" %}
+            <label for="form-field-2" class="itp-Label">Name</label>
+          </div>
         </div>
-
-        <div class="l-Grid l-Grid--gutter">
-            <p class="l-Grid__item u-Width3of5--bp4">
-                <label class="itp-Label">Street<abbr title="Required field">*</abbr></label>
-                <input type="text" class="itp-InputText itp-InputText--md" placeholder="Street" />
-            </p>
-            <p class="l-Grid__item u-Width2of5--bp4">
-                <label class="itp-Label">Number<abbr title="Required field">*</abbr></label>
-                <input type="text" class="itp-InputText itp-InputText--md" placeholder="Number" />
-            </p>
+        <div class="l-Grid__item u-Width1of2--bp3">
+          <div class="itp-FormItem">
+            {% include atoms/input-field.html id="form-field-3" type="email" size="md" placeholder="email@address.com" %}
+            <label for="form-field-3" class="itp-Label hasError">Email address</label>
+          </div>
         </div>
+      </div>
 
-        <div class="l-Grid l-Grid--gutter">
-            <p class="l-Grid__item u-Width2of5--bp4">
-                <label class="itp-Label">Zip code<abbr title="Required field">*</abbr></label>
-                <input type="text" class="itp-InputText itp-InputText--md" placeholder="Zip code" />
-            </p>
-            <p class="l-Grid__item u-Width3of5--bp4">
-                <label class="itp-Label has-error">City<abbr title="Required field">*</abbr></label>
-                <input type="text" class="itp-InputText itp-InputText--md has-error" placeholder="City" />
-                <span class="c-alert-inline c-alert-inline--error">This field is required.</span>
-            </p>
+      <div class="l-Grid l-Grid--gutter">
+        <div class="l-Grid__item u-Width3of5--bp4">
+          <div class="itp-FormItem">
+            {% include atoms/input-field.html id="form-field-4" type="text" size="md" placeholder="Street" %}
+            <label for="form-field-4" class="itp-Label">Street</label>
+          </div>
         </div>
+        <div class="l-Grid__item u-Width2of5--bp4">
+          <div class="itp-FormItem">
+            {% include atoms/input-field.html id="form-field-5" type="text" size="md" placeholder="Number" %}
+            <label for="form-field-5" class="itp-Label">Number</label>
+          </div>
+        </div>
+      </div>
 
-        <div class="l-Grid l-Grid--gutter">
-            <p class="l-Grid__item">
-               <label class="itp-Label">Message<abbr title="Required field">*</abbr></label>
-                <textarea class="itp-InputText itp-InputText--md" rows="5" cols="30"></textarea>
-            </p>
+      <div class="l-Grid l-Grid--gutter">
+        <div class="l-Grid__item u-Width2of5--bp4">
+          <div class="itp-FormItem">
+            {% include atoms/input-field.html id="form-field-6" type="text" size="md" placeholder="Zip code" %}
+            <label for="form-field-6" class="itp-Label">Zip code</label>
+          </div>
         </div>
+        <div class="l-Grid__item u-Width3of5--bp4">
+          <div class="itp-FormItem">
+            {% include atoms/input-field.html id="form-field-7" type="text" size="md" placeholder="City" %}
+            <label for="form-field-7" class="itp-Label">City</label>
+          </div>
+        </div>
+      </div>
 
-        <div class="l-Grid l-Grid--gutter">
-            <p class="l-Grid__item itp-ButtonGroup">
-                <input type="submit" class="itp-Button itp-Button--md itp-Button--primary" value="Volgende" />
-                <a href="#" class="itp-Button itp-Button--md itp-Button--secondary">Vorige</a>
-            </p>
+      <div class="l-Grid l-Grid--gutter">
+        <div class="l-Grid__item">
+          <div class="itp-FormItem">
+            {% include atoms/input-textarea.html id="form-field-8" size="md" rows="5" %}
+            <label for="form-field-8" class="itp-Label">Message</label>
+          </div>
         </div>
-    </fieldset>
-</form>
+      </div>
+
+      <button type="button" class="itp-Button itp-Button--md itp-Button--primary">Next</button>
+      <button type="button" class="itp-Button itp-Button--md itp-Button--secondary">Previous</button>
+    </form>
+  </div>
+</div>

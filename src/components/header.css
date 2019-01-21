@@ -11,6 +11,6 @@
 
 @media(--bp3) {
     .itp-Header {
-        padding: var(--spacingLarge);
+        padding: calc(var(--spacingBase) * 2) var(--spacingLarge);
     }
 }

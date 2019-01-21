@@ -4,15 +4,13 @@
  :root {
   --htmlOverflowY:                       hidden;
 
-  --frameLeftWidth:                      275px;
-
   --radius:                              0;
 
   --fontFamilyPrimary:                   'flama', sans-serif;
   --fontFamilySecondary:                 'flama semicondensed', serif;
 
-  --h1FontFamily:                          var(--fontFamilySecondary);
-  --h2FontFamily:                          var(--fontFamilySecondary);
-  --h3FontFamily:                          var(--fontFamilySecondary);
-  --h4FontFamily:                          var(--fontFamilySecondary);
+  --h1FontFamily:                        var(--fontFamilySecondary);
+  --h2FontFamily:                        var(--fontFamilySecondary);
+  --h3FontFamily:                        var(--fontFamilySecondary);
+  --h4FontFamily:                        var(--fontFamilySecondary);
 }

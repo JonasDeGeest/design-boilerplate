@@ -1,0 +1,16 @@
+/*
+    Components: Label
+    ---
+    Form label styles
+*/
+/**
+ *  1. When wrapped inside a FormItem component, the Label component should be place first.
+ */
+.itp-Label {
+  order: 1;
+  font-weight: var(--fontWeightSecondary);
+}
+
+.itp-Label.hasError {
+  color: var(--colorError);
+}

@@ -9,7 +9,7 @@
 @import '../vendor/itp-css/src/normalize.css';
 
 /* Fonts */
-@import 'fonts/embed.css'
+@import 'fonts/embed.css';
 
 /* Global */
 @import '../vendor/itp-css/src/global/form.css';
@@ -21,15 +21,23 @@
 /* Layout Components */
 @import '../vendor/itp-css/src/layout/frame.css';
 @import '../vendor/itp-css/src/layout/grid.css';
+@import '../vendor/itp-css/src/layout/media-embed.css';
 @import '../vendor/itp-css/src/layout/row.css';
 @import '../vendor/itp-css/src/layout/table.css';
-@import '../vendor/itp-css/src/layout/media-embed.css';
 
 /* Components */
 @import 'components/alert.css';
 @import 'components/button.css';
+@import 'components/card.css';
+@import 'components/form.css';
 @import 'components/header.css';
-@import 'components/input.css';
+@import 'components/input-check.css';
+@import 'components/input-group.css';
+@import 'components/input-radio.css';
+@import 'components/input-select.css';
+@import 'components/input-text.css';
+@import 'components/input-toggle.css';
+@import 'components/label.css';
 @import 'components/logo.css';
 @import 'components/navigation.css';
 @import 'components/page-title.css';

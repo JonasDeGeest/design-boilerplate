@@ -1,0 +1,10 @@
+<div class="itp-InputGroup {% if include.invalid %}hasError{% endif %}">
+  <div class="itp-InputGroup__prepend">
+    <span class="itp-InputGroup__label">
+
+      {{ include.prepend }}
+
+    </span>
+  </div>
+  <input id="{{ include.id }}" type="{{ include.type }}" class="itp-InputText itp-InputText--{{ include.size }}" placeholder="{{ include.placeholder }}" name="{{ include.id }}" value="{{ include.value }}">
+</div>

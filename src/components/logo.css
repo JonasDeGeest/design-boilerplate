@@ -19,13 +19,13 @@
     background-size: contain;
     text-indent: -99999px; /* [2] */
     font-size: var(--baseFontSize);
-    line-height: var(--baseLineHeight);
+    line-height: 1;
 }
 
 @media(--bp3) {
     .itp-Logo {
-        width: 150px;
-        height: 30px;
+        width: 130px;
+        height: 25px;
     }
 }
 

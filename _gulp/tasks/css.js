@@ -21,7 +21,12 @@ gulp.task('css', function () {
       postcssPresetEnv(config.settings)
   ];
   return gulp.src(config.src)
-    .pipe(plumber())
+    .pipe(plumber({
+      errorHandler: function (err) {
+        console.log(err);
+        this.emit('end');
+      }
+    }))
     .pipe(sourcemaps.init())
     .pipe(filesize())
     .pipe(postcss(plugins))

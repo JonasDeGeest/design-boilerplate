@@ -1,0 +1,49 @@
+/*
+    Components: Input Toggle
+    ---
+    Togglebutton styles like on/off switches.
+*/
+.itp-InputToggle {
+  display: flex;
+  order: 2;
+  width: 100%;
+  border: var(--borderWidth) var(--borderStyle) var(--colorNeutral200);
+  border-radius: var(--radius);
+
+}
+
+  .itp-InputToggle__item {
+    position: relative;
+    flex: 1;
+    align-items: center;
+    overflow: hidden;
+    color: var(--colorBlack);
+    background-color: var(--colorWhite);
+  }
+
+  .itp-InputToggle__item + .itp-InputToggle__item {
+    border-left: var(--borderWidth) var(--borderStyle) var(--colorNeutral200);
+  }
+
+  .itp-InputToggle__item > input {
+    position: absolute;
+    left: -2rem;
+    top: 0;
+  }
+
+  .itp-InputToggle__item > input:checked + label {
+    color: var(--colorWhite);
+    background-color: var(--colorPrimary400);
+    box-shadow: inset 0 0 10px var(--colorPrimary);
+  }
+
+  .itp-InputToggle__item > label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: .75rem 1rem;
+    font-size: calc(var(--ms0) / var(--fontSizePrimary) * 1rem);
+    transition: all var(--animationDurationSecondary) var(--animationEasingPrimary);
+  }

@@ -1,0 +1,26 @@
+/*
+    Components: Card
+    ---
+    A card displays site content in a manner similar to a playing card.
+*/
+
+.itp-Card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  overflow: hidden;
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+}
+
+  .itp-Card__body {
+    padding: var(--spacingBase);
+  }
+
+  .itp-Card--lg > .itp-Card__body {
+    padding: var(--spacingLarge);
+  }
+
+.itp-Card--primary {
+  border: var(--borderWidth) var(--borderStyle) var(--colorNeutral200);
+}

@@ -1,0 +1,61 @@
+/*
+  Components: Radiobutton
+  ---
+  Custom radiobutton styles with pure CSS
+*/
+.itp-InputRadioList {
+  order: 2;
+}
+
+.itp-InputRadio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: .5rem;
+  overflow: hidden;
+}
+
+.itp-InputRadio > input {
+  position: absolute;
+  left: -2rem;
+  top: 0;
+}
+
+.itp-InputRadio > input:disabled + label {
+  color: var(--colorNeutral300);
+}
+
+.itp-InputRadio > label {
+  margin: 0;
+  line-height: 1;
+  font-size: calc(var(--ms0) / var(--fontSizePrimary) * 1rem);
+}
+
+.itp-InputRadio > label::before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  width: 1rem;
+  height: 1rem;
+  margin-right: .35rem;
+  border: var(--borderWidth) var(--borderStyle) var(--colorNeutral200);
+  border-radius: 50%;
+}
+
+.itp-InputRadio > input:checked + label {
+  color: var(--colorPrimary);
+}
+
+.itp-InputRadio > input:checked + label::before {
+  background: var(--colorPrimary) url('../img/svg/icon-radio-white.svg') no-repeat center;
+  border-color: var(--colorPrimary);
+  background-size: .75rem;
+}
+
+.itp-InputRadio--inline {
+  display: inline-flex;
+  width: auto;
+  margin-right: 1rem;
+}

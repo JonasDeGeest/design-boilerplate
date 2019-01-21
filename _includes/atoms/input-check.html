@@ -1,0 +1,4 @@
+<div class="itp-InputCheck itp-InputCheck--inline {% if include.invalid %}hasError{% endif %}">
+    <input id="{{ include.id }}" type="checkbox" {% if include.disabled %}disabled{% endif %}>
+    <label for="{{ include.id }}">{{ include.label }}</label>
+</div>
