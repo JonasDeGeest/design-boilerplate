@@ -1,6 +1,6 @@
-<h3>Form components</h3>
 <div class="itp-Card itp-Card--lg itp-Card--primary">
   <div class="itp-Card__body">
+    <h3>Textfield sizes</h3>
     <div class="itp-FormItem">
       {% include atoms/input-field.html id="text-sm" type="text" size="sm" placeholder="Example textfield" %}
       <label for="text-sm" class="itp-Label">Text field small</label>
@@ -13,15 +13,27 @@
       {% include atoms/input-field.html id="text-lg" type="text" size="lg" placeholder="Example textfield" %}
       <label for="text-lg" class="itp-Label">Text field large</label>
     </div>
+  </div>
+
+  <div class="itp-Card__body">
+    <h3>Textfield validation</h3>
     <div class="itp-FormItem">
       {% include atoms/input-field.html id="text-md-error" type="text" size="md" invalid="true" %}
       <label for="text-md-error" class="itp-Label hasError">Errored field</label>
       <small class="itp-InputHelper hasError">This field is required</small>
     </div>
+  </div>
+
+  <div class="itp-Card__body">
+    <h3>Textfield states</h3>
     <div class="itp-FormItem">
       {% include atoms/input-field.html id="text-md-disabled" type="text" size="md" disabled="true" %}
       <label for="text-md-disabled" class="itp-Label">Disabled field</label>
     </div>
+  </div>
+
+  <div class="itp-Card__body">
+    <h3>Textfield pre and appends</h3>
     <div class="itp-FormItem">
       {% include atoms/input-field-append.html id="text-append" type="text" size="md" placeholder="username" append="@inthepocket.mobi" %}
       <label for="text-append" class="itp-Label">Text field with appended element</label>
@@ -34,6 +46,10 @@
       {% include atoms/input-number.html value="0" %}
       <label class="itp-Label">Number input</label>
     </div>
+  </div>
+
+  <div class="itp-Card__body">
+    <h3>Dropdown sizes</h3>
     <div class="itp-FormItem">
       {% include atoms/input-select.html id="select-sm" size="sm" %}
       <label for="select-sm" class="itp-Label">Select small</label>
@@ -46,6 +62,10 @@
       {% include atoms/input-select.html id="select-lg" size="lg" %}
       <label for="select-lg" class="itp-Label">Select large</label>
     </div>
+  </div>
+
+  <div class="itp-Card__body">
+    <h3>Checkboxes</h3>
     <div class="itp-FormItem">
       <div class="itp-InputCheckList">
         {% include atoms/input-check.html id="check-01" label="Checkbox" %}
@@ -60,6 +80,10 @@
       </div>
       <label class="itp-Label">Checkboxes disabled</label>
     </div>
+  </div>
+
+  <div class="itp-Card__body">
+    <h3>Radiobuttons</h3>
     <div class="itp-FormItem">
       <div class="itp-InputRadioList">
         {% include atoms/input-radio.html id="radio-01" label="Radiobutton" %}
@@ -81,9 +105,9 @@
   </div>
 </div>
 
-<h3>Standard contact form </h3>
 <div class="itp-Card itp-Card--lg itp-Card--primary">
   <div class="itp-Card__body">
+    <h3>Standard contact form </h3>
     <form action="#" method="post">
       <div class="itp-Alert itp-Alert--error">
         <p><strong>Warning:</strong> Please provide your email address</p>
@@ -107,11 +131,10 @@
   </div>
 </div>
 
-<h3>Form built with grids</h3>
 <div class="itp-Card itp-Card--lg itp-Card--primary">
   <div class="itp-Card__body">
+    <h3>Form built with grids</h3>
     <form action="#" method="post">
-
       <div class="l-Grid l-Grid--gutter">
         <div class="l-Grid__item u-Width1of2--bp3">
           <div class="itp-FormItem">
@@ -122,7 +145,7 @@
         <div class="l-Grid__item u-Width1of2--bp3">
           <div class="itp-FormItem">
             {% include atoms/input-field.html id="form-field-3" type="email" size="md" placeholder="email@address.com" %}
-            <label for="form-field-3" class="itp-Label hasError">Email address</label>
+            <label for="form-field-3" class="itp-Label">Email address</label>
           </div>
         </div>
       </div>

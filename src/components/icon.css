@@ -1,0 +1,36 @@
+/*
+  Components: Icons
+  ---
+  Icon sizes and styles
+*/
+
+/*
+ * Icons are being used as inline SVG and referenced from img/svg/svg-symbols.svg
+ * This way we have full control over it's color and shape.
+ * https://css-tricks.com/svg-symbol-good-choice-icons/
+*/
+
+.itp-Icon {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    vertical-align: middle;
+}
+
+.itp-Icon--sm {
+    width: .865rem;
+    height: .865rem;
+}
+
+.itp-Icon--md {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.itp-Icon--lg {
+    width: 1.75rem;
+    height: 1.75rem;
+}

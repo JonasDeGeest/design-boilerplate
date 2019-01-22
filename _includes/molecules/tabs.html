@@ -1,0 +1,9 @@
+<ul class="itp-Tabs {% if include.fill %}itp-Tabs--fill{% endif %}">
+    {% for nav-item in page.nav-tabs %}
+        <li class="itp-Tabs__item {% if nav-item.state == 'active' %}isSelected{% endif %}">
+            <a class="itp-Tabs__link" href="{{ nav-item.url }}" role="tab" {% if nav-item.state == 'active' %}aria-selected="true"{% endif %}>
+                {{ nav-item.title }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>

@@ -3,9 +3,14 @@
     ---
     A card displays site content in a manner similar to a playing card.
 */
+/*
+ * 1. Make card flex in order for children to stretch
+ *
+ * 2. Make body stretch height when card fills in the whole space.
+*/
 
 .itp-Card {
-  display: flex;
+  display: flex; /* [1] */
   flex-direction: column;
   flex: 1 1 auto;
   overflow: hidden;
@@ -13,8 +18,21 @@
   margin-bottom: 2rem;
 }
 
-  .itp-Card__body {
+  .itp-Card__header {
     padding: var(--spacingBase);
+  }
+
+  .itp-Card__title {
+    margin-bottom: 0;
+  }
+
+  .itp-Card__body {
+    flex: 1; /* [2] */
+    padding: var(--spacingBase);
+  }
+
+  .itp-Card__footer {
+    padding: var(--spacingBase) var(--spacingBase) 0;
   }
 
   .itp-Card--lg > .itp-Card__body {
@@ -22,5 +40,10 @@
   }
 
 .itp-Card--primary {
-  border: var(--borderWidth) var(--borderStyle) var(--colorNeutral200);
+  /* box-shadow: 0 5px 10px var(--colorNeutral100); */
+  border: var(--borderWidth) var(--borderStyle) var(--colorNeutral100);
+}
+
+.itp-Card--primary > .itp-Card__body + .itp-Card__body {
+  border-top: var(--borderWidth) var(--borderStyle) var(--colorNeutral100);
 }

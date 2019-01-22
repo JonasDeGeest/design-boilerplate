@@ -3,37 +3,22 @@ layout: frame
 title: Styleguide
 section: styleguide
 permalink: styleguide.html
+nav-tabs:
+- title: Tab label 1
+  url: #!
+  state: active
+- title: Tab label 2
+  url: #!
+- title: Tab label 3
+  url: #!
+- title: Tab label 4
+  url: #!
 ---
 
 <div class="l-Frame__left">
-  <nav class="s-Navigation">
-    <ul class="s-Navigation__list">
-      <li class="s-Navigation__item">
-        <a href="#base" class="s-Navigation__link">Base elements</a>
-      </li>
-      <li class="s-Navigation__item">
-        <a href="#colors" class="s-Navigation__link">Colors</a>
-      </li>
-      <li class="s-Navigation__item">
-        <a href="#buttons" class="s-Navigation__link">Buttons</a>
-      </li>
-      <li class="s-Navigation__item">
-        <a href="#forms" class="s-Navigation__link">Forms</a>
-      </li>
-      <li class="s-Navigation__item">
-        <a href="#alerts" class="s-Navigation__link">Alerts</a>
-      </li>
-      <li class="s-Navigation__item">
-        <a href="#pagination" class="s-Navigation__link">Pagination</a>
-      </li>
-      <li class="s-Navigation__item">
-        <a href="#helpers" class="s-Navigation__link">Helpers</a>
-      </li>
-      <li class="s-Navigation__item">
-        <a href="#cards" class="s-Navigation__link">Cards</a>
-      </li>
-    </ul>
-  </nav>
+
+  {% include styleguide/navigation.html %}
+
 </div>
 <div class="l-Frame__main">
   <div class="l-Row">
@@ -60,20 +45,20 @@ permalink: styleguide.html
     </div>
   </section>
 
+  <section id="icons" class="l-Row">
+    <div class="l-Container">
+      <h2 class="s-SectionTitle">Icons</h2>
+
+      {% include styleguide/icons.html %}
+
+    </div>
+  </section>
+
   <section id="buttons" class="l-Row">
     <div class="l-Container">
       <h2 class="s-SectionTitle">Buttons</h2>
 
       {% include styleguide/buttons.html %}
-
-    </div>
-  </section>
-
-  <section id="forms" class="l-Row">
-    <div class="l-Container">
-      <h2 class="s-SectionTitle">Forms</h2>
-
-      {% include styleguide/forms.html %}
 
     </div>
   </section>
@@ -87,20 +72,29 @@ permalink: styleguide.html
     </div>
   </section>
 
-  <section id="pagination" class="l-Row">
+  <section id="forms" class="l-Row">
     <div class="l-Container">
-      <h2 class="s-SectionTitle">Pagination</h2>
+      <h2 class="s-SectionTitle">Forms</h2>
 
-      {% include styleguide/pagination.html %}
+      {% include styleguide/forms.html %}
 
     </div>
   </section>
 
-  <section id="helpers" class="l-Row">
+  <section id="tabs" class="l-Row">
     <div class="l-Container">
-      <h2 class="s-SectionTitle">Helpers</h2>
+      <h2 class="s-SectionTitle">Tabs</h2>
 
-      {% include styleguide/helpers.html %}
+      {% include styleguide/tabs.html %}
+
+    </div>
+  </section>
+
+  <section id="pagination" class="l-Row">
+    <div class="l-Container">
+      <h2 class="s-SectionTitle">Pagination</h2>
+
+      {% include molecules/pagination.html %}
 
     </div>
   </section>
@@ -110,6 +104,15 @@ permalink: styleguide.html
       <h2 class="s-SectionTitle">Cards</h2>
 
       {% include styleguide/cards.html %}
+
+    </div>
+  </section>
+
+  <section id="helpers" class="l-Row">
+    <div class="l-Container">
+      <h2 class="s-SectionTitle">Helpers</h2>
+
+      {% include styleguide/helpers.html %}
 
     </div>
   </section>

@@ -1,0 +1,16 @@
+/*
+    Component: Footer
+    ---
+    Application footer styles
+*/
+
+.itp-Footer {
+    padding: var(--spacingBase);
+    box-shadow: 0 0 50px var(--colorNeutral100);
+}
+
+@media(--bp3) {
+    .itp-Footer {
+        padding: calc(var(--spacingBase) * 2) var(--spacingLarge);
+    }
+}

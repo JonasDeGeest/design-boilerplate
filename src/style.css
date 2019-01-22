@@ -29,8 +29,10 @@
 @import 'components/alert.css';
 @import 'components/button.css';
 @import 'components/card.css';
+@import 'components/footer.css';
 @import 'components/form.css';
 @import 'components/header.css';
+@import 'components/icon.css';
 @import 'components/input-check.css';
 @import 'components/input-group.css';
 @import 'components/input-radio.css';
@@ -41,6 +43,8 @@
 @import 'components/logo.css';
 @import 'components/navigation.css';
 @import 'components/page-title.css';
+@import 'components/pagination.css';
+@import 'components/tabs.css';
 
 /* Utilities */
 @import '../vendor/itp-css/src/utilities/flexbox.css';

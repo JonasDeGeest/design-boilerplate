@@ -84,8 +84,8 @@ module.exports = {
   symbols: {
     src: path + '_artwork/symbols/**/*.svg', // Location of source icons
     dest: path + 'img/svg', // Destination of main SVG
-    prefix: 'c-symbol-', // SVG symbols ID prefix e.g. `c-symbol-right`
-    class: 'c-symbolset' // Main SVG import classname
+    prefix: 'icon-', // SVG symbols ID prefix e.g. `c-symbol-right`
+    class: 'iconSet' // Main SVG import classname
   }
 
 };

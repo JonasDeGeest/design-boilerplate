@@ -33,8 +33,8 @@
 
   .itp-InputToggle__item > input:checked + label {
     color: var(--colorWhite);
-    background-color: var(--colorPrimary400);
-    box-shadow: inset 0 0 10px var(--colorPrimary);
+    background-color: var(--colorPrimary);
+    box-shadow: inset 0 0 10px rgba(0,0,0,.5);
   }
 
   .itp-InputToggle__item > label {

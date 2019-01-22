@@ -74,6 +74,10 @@
   font-size: calc(var(--ms-1) / var(--fontSizePrimary) * 1rem);
 }
 
+.itp-Button--block {
+  width: 100%;
+}
+
 /*
   Modifiers: Button Types
 */

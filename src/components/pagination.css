@@ -1,0 +1,30 @@
+/*
+    Components: Pagination
+    ---
+    Default pagination with a centered option.
+*/
+.itp-Pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+  .itp-Pagination__item {
+    font-weight: var(--fontWeightSecondary);
+    color: var(--colorNeutral300);
+  }
+
+  .itp-Pagination__item + .itp-Pagination__item {
+    margin-left: -1px;
+  }
+
+  .itp-Pagination__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 48px;
+    padding: .25rem;
+    border: var(--borderWidth) var(--borderStyle) var(--colorNeutral100);
+    text-decoration: none;
+  }

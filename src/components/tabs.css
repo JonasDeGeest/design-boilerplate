@@ -1,0 +1,52 @@
+/*
+    Components: Tabs
+    ---
+    Tab navigation styles.
+*/
+.itp-Tabs {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: var(--borderWidth) var(--borderStyle) var(--colorNeutral100);
+}
+
+  .itp-Tabs__item {
+    margin-bottom: -1px;
+    border-bottom: 3px solid transparent;
+  }
+
+  .itp-Tabs__item.isSelected {
+    font-weight: var(--fontWeightSecondary);
+    border-color: var(--colorPrimary);
+  }
+
+  .itp-Tabs__link {
+    display: block;
+    font-weight: var(--fontWeightSecondary);
+    padding: .75rem 1rem;
+  }
+
+  .itp-Tabs__link,
+  .itp-Tabs__link:visited {
+    color: var(--colorPrimary300);
+    text-decoration: none;
+  }
+
+  .itp-Tabs__link:hover,
+  .itp-Tabs__link:active {
+    text-decoration: none;
+  }
+
+  .isSelected .itp-Tabs__link {
+    color: var(--colorPrimary);
+  }
+
+/*
+ * Modifiers: Stretch tab items to fill in space
+*/
+
+.itp-Tabs--fill > .itp-Tabs__item {
+  flex: 1 1 0%;
+  text-align: center;
+}
