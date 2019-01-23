@@ -1,10 +1,29 @@
 /**
- * Theme page custom properties
+ * In The Pocket theme properties
  */
  :root {
+  --colorBlack:        #000000;
+  --colorNeutral100:   #EEEEEE;
+  --colorNeutral200:   #CCCCCC;
+  --colorNeutral300:   #AAAAAA;
+  --colorNeutral400:   #777777;
+  --colorNeutral500:   #333333;
+  --colorPrimary100:   #E9E8F6;
+  --colorPrimary200:   #BDBBE4;
+  --colorPrimary300:   #928DD3;
+  --colorPrimary400:   #6660C1;
+  --colorPrimary500:   #3B33B0;
+  --colorPrimary:      #10069F;
+  --colorWhite:        #FFFFFF;
+  --colorError:        #FF4136;
+  --colorSuccess:      #2ECC40;
+  --colorNotice:       #10069F;
+
   --htmlOverflowY:                       hidden;
 
   --radius:                              0;
+
+  --spacingBase:                         1.5rem;
 
   --fontFamilyPrimary:                   'flama', sans-serif;
   --fontFamilySecondary:                 'flama semicondensed', serif;

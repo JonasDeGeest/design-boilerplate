@@ -4,3 +4,44 @@ title: Foundations
 section: styleguide
 permalink: /styleguide/foundations.html
 ---
+
+<div class="l-Frame__left">
+
+  {% include styleguide/navigation.html %}
+
+</div>
+<div class="l-Frame__main">
+  <div class="l-Row">
+    <div class="l-Container">
+      <h1 class="itp-PageTitle">{{ page.title }}</h1>
+      <p class="itp-PageIntro u-Width1of2--bp4">Here you will find an overview of the brand foundations such as used colors, typography, illustrations, &hellip;</p>
+    </div>
+  </div>
+
+  <section id="base" class="l-Row">
+    <div class="l-Container">
+      <h2 class="s-SectionTitle">Logo</h2>
+
+      {% include styleguide/logo.html %}
+
+    </div>
+  </section>
+
+  <section id="base" class="l-Row">
+    <div class="l-Container">
+      <h2 class="s-SectionTitle">Typography</h2>
+
+      {% include styleguide/typography.html %}
+
+    </div>
+  </section>
+
+  <section id="colors" class="l-Row">
+    <div class="l-Container">
+      <h2 class="s-SectionTitle">Colors</h2>
+
+      {% include styleguide/colors.html %}
+
+    </div>
+  </section>
+</div>

@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Meta data
-title: 'ITP Design Framework'
+title: 'ITP Static Prototype Boilerplate'
 author: 'Your name'
 description: 'This is a framework based on a component-based architecture and a series of principles. It creates a structure to easily set-up and build bespoke web projects.'
 

@@ -3,10 +3,7 @@
     ---
     Site navigation
 */
-.itp-Navigation {
-  float: right;
-  margin-top: .25rem;
-}
+.itp-Navigation {}
 
   .itp-Navigation__list {
     display: flex;
@@ -16,8 +13,11 @@
   }
 
   .itp-Navigation__item {
-    margin-left: 2rem;
     font-size: calc(var(--ms-1) / var(--fontSizePrimary) * 1rem);
+  }
+
+  .itp-Navigation__item + .itp-Navigation__item {
+    margin-left: 1rem;
   }
 
   .itp-Navigation__link,

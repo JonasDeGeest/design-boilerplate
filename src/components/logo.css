@@ -3,33 +3,37 @@
     ---
     Brand image/logo
 */
-
 /**
  *  1. Needs to be the width of the logo you are using.
  *  2. Logo is set as background-image.
  *     Text-indent is set to prevent text from showing on top of the background-image.
  */
-
 .itp-Logo {
-    display: inline-block;
-    width: 100px; /* [1] */
-    height: 30px;
-    margin: 0;
-    background: url('../img/svg/logo.svg') no-repeat center;
-    background-size: contain;
-    text-indent: -99999px; /* [2] */
-    font-size: var(--baseFontSize);
-    line-height: 1;
+  display: inline-block;
+  width: 100px;
+  /* [1] */
+  height: 30px;
+  margin: 0;
+  background: url('../img/svg/logo.svg') no-repeat center;
+  background-size: contain;
+  text-indent: -99999px;
+  /* [2] */
+  font-size: var(--baseFontSize);
+  line-height: 1;
 }
 
 @media(--bp3) {
-    .itp-Logo {
-        width: 130px;
-        height: 25px;
-    }
+  .itp-Logo {
+    width: 130px;
+    height: 25px;
+  }
 }
 
-    .itp-Logo__link {
-        display: block;
-        height: 100%;
-    }
+  .itp-Logo__link {
+    display: block;
+    height: 100%;
+  }
+
+.itp-Logo--white {
+  background-image: url('../img/svg/logo-white.svg');
+}

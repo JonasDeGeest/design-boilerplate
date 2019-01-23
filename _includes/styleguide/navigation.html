@@ -1,34 +1,24 @@
 <nav class="s-Navigation">
   <ul class="s-Navigation__list">
-    <li class="s-Navigation__item">
-      <a href="#base" class="s-Navigation__link">Base elements</a>
+    <li class="s-Navigation__item {% if page.title == "Foundations" %} isSelected{% endif %}">
+      <a href="../styleguide/foundations.html" class="s-Navigation__link">Foundations</a>
     </li>
-    <li class="s-Navigation__item">
-      <a href="#colors" class="s-Navigation__link">Colors</a>
+    <li class="s-Navigation__item {% if page.section == "Components" %} isSelected{% endif %}">
+      <a href="../styleguide/components.html" class="s-Navigation__link">Components</a>
+      {% if page.title == "Components" %}
+      <ul class="s-Navigation__sublist">
+        <li class="s-Navigation__item"><a href="#icons" class="s-Navigation__link">Icons</a></li>
+        <li class="s-Navigation__item"><a href="#buttons" class="s-Navigation__link">Buttons</a></li>
+        <li class="s-Navigation__item"><a href="#alerts" class="s-Navigation__link">Alerts</a></li>
+        <li class="s-Navigation__item"><a href="#forms" class="s-Navigation__link">Forms</a></li>
+        <li class="s-Navigation__item"><a href="#tabs" class="s-Navigation__link">Tabs</a></li>
+        <li class="s-Navigation__item"><a href="#pagination" class="s-Navigation__link">Pagination</a></li>
+        <li class="s-Navigation__item"><a href="#cards" class="s-Navigation__link">Cards</a></li>
+      </ul>
+      {% endif %}
     </li>
-    <li class="s-Navigation__item">
-      <a href="#icons" class="s-Navigation__link">Icons</a>
-    </li>
-    <li class="s-Navigation__item">
-      <a href="#buttons" class="s-Navigation__link">Buttons</a>
-    </li>
-    <li class="s-Navigation__item">
-      <a href="#alerts" class="s-Navigation__link">Alerts</a>
-    </li>
-    <li class="s-Navigation__item">
-      <a href="#forms" class="s-Navigation__link">Forms</a>
-    </li>
-    <li class="s-Navigation__item">
-      <a href="#tabs" class="s-Navigation__link">Tabs</a>
-    </li>
-    <li class="s-Navigation__item">
-      <a href="#pagination" class="s-Navigation__link">Pagination</a>
-    </li>
-    <li class="s-Navigation__item">
-      <a href="#cards" class="s-Navigation__link">Cards</a>
-    </li>
-    <li class="s-Navigation__item">
-      <a href="#helpers" class="s-Navigation__link">Helpers</a>
+    <li class="s-Navigation__item {% if page.section == "Layout" %} isSelected{% endif %}">
+      <a href="../styleguide/layout.html" class="s-Navigation__link">Layout</a>
     </li>
   </ul>
 </nav>

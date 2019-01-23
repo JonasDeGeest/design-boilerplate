@@ -1,61 +1,69 @@
 ---
 layout: default
-title: Design framework
+title: Getting started
 section: home
 permalink: index.html
 ---
 
 <div class="l-Row">
-    <div class="l-Container">
-        <div class="l-Grid">
-            <div class="l-Grid__item">
-                <h1 class="itp-PageTitle">{{ page.title }}</h1>
-                <p class="itp-PageTitleCaption">// Lightweight, responsive, plug &amp; play design framework</p>
-            </div>
-        </div>
+  <div class="l-Container">
+    <div class="l-Grid">
+      <div class="l-Grid__item">
+        <h1 class="itp-PageTitle">{{ page.title }}</h1>
+      </div>
     </div>
+  </div>
 </div>
 
 <div class="l-Row">
-    <div class="l-Container">
+  <div class="l-Container">
+    <div class="itp-Card itp-Card--primary itp-Card--lg">
+      <div class="itp-Card__body">
         <div class="l-Grid l-Grid--gutter">
-            <div class="l-Grid__item u-Width1of2--bp3">
-                <h2>This is a H2 subtitle</h2>
-                <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
-                <p>
-                    <a href="#" class="itp-Button itp-Button--md itp-Button--primary">
-                        Button
-                    </a>
-                </p>
-            </div>
-            <div class="l-Grid__item u-Width1of2--bp3">
-                <h2>This is a H2 subtitle</h2>
-                <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
-                <p>
-                    <a href="#" class="itp-Button itp-Button--md itp-Button--secondary">
-                        Button
-                    </a>
-                </p>
-            </div>
+          <div class="l-Grid__item u-Width1of2--bp3">
+            <h2>About this boilerplate</h2>
+            <p>Our Static Prototype Boilerplate makes use of our own <a href="https://bitbucket.org/inthepocket/itp-css">ITP CSS framework</a>. It adds tools like <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://gulpjs.com/">Gulp</a> to simplify designing and building in the browser. The boilerplate can be used as a <strong>styleguide</strong>, to build <strong>static websites and applications</strong> or to speed up making <strong>HTML prototypes</strong>.</p>
+          </div>
         </div>
-    </div>
-</div>
-
-<div class="l-Row">
-    <div class="l-Container">
+      </div>
+      <div class="itp-Card__body">
         <div class="l-Grid l-Grid--gutter">
-            <div class="l-Grid__item u-Width1of3--bp3">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. </p>
-            </div>
-            <div class="l-Grid__item u-Width1of3--bp3">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. </p>
-            </div>
-            <div class="l-Grid__item u-Width1of3--bp3">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. </p>
-            </div>
+          <div class="l-Grid__item u-Width1of2--bp3">
+            <h2>CSS Structure</h2>
+            <p>This boilerplate relies on our ITP CSS framework to serve as a foundation for CSS. Project specific code should be written in seperate components. our ITP CSS framework is maintained as a dependency which is loaded with `npm`. We believe these partials should be easy to update and configurable without writing new code.</p>
+          </div>
         </div>
+      </div>
+      <div class="itp-Card__body">
+        <div class="l-Grid l-Grid--gutter">
+          <div class="l-Grid__item u-Width1of2--bp3">
+            <h2>Atomic Design</h2>
+            <p>We believe our Components should be organised according to the <a href="http://atomicdesign.bradfrost.com/chapter-2/">Atomic Design principle</a>.</p>
+          </div>
+        </div>
+        <div class="l-Grid l-Grid--gutter">
+          <div class="l-Grid__item u-Width1of2--bp3 u-Width1of3--bp5">
+            <h4 class="u-SpacingPt1">Atoms <br> <small>/_includes/atoms</small></h4>
+            <p>Atoms are the basic building blocks of matter. Applied to web interfaces, atoms are our HTML tags, such as a form label, an input or a button. Atoms can also include more abstract elements like color palettes, fonts and even more invisible aspects of an interface like animations.</p>
+          </div>
+          <div class="l-Grid__item u-Width1of2--bp3 u-Width1of3--bp5">
+            <h4 class="u-SpacingPt1">Molecules <br> <small>/_includes/molecules</small></h4>
+            <p>Molecules are groups of atoms bonded together and are the smallest fundamental units of a compound. These molecules take on their own properties and serve as the backbone of our design systems.</p>
+          </div>
+          <div class="l-Grid__item u-Width1of2--bp3 u-Width1of3--bp5">
+            <h4 class="u-SpacingPt1">Organisms <br> <small>/_includes/organisms</small></h4>
+            <p>Organisms are groups of molecules joined together to form a relatively complex, distinct section of an interface.</p>
+          </div>
+          <div class="l-Grid__item u-Width1of2--bp3 u-Width1of3--bp5">
+            <h4 class="u-SpacingPt1">Templates <br> <small>/_layouts</small></h4>
+            <p>Templates consist mostly of groups of organisms stitched together to form pages. It’s here where we start to see the design coming together and start seeing things like layout in action.</p>
+          </div>
+          <div class="l-Grid__item u-Width1of2--bp3 u-Width1of3--bp5">
+            <h4 class="u-SpacingPt1">Pages <br> <small>/pages</small></h4>
+            <p>Pages are specific instances of templates that show what a UI looks like with real representative content in place.</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>

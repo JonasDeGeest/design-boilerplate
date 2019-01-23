@@ -1,7 +1,7 @@
 Static Prototype Boilerplate
 =====================
 
-Our Static Prototype Boilerplate makes use of our [ITP `CSS` framework](https://bitbucket.org/inthepocket/itp-css). It adds tools like [Jekyll](http://jekyllrb.com/) and [Gulp](http://gulpjs.com/) to simplify designing and building in the browser. The boilerplate can be used as a **styleguide**, to build **static websites** or to speed up making **HTML prototypes**.
+Our Static Prototype Boilerplate makes use of our [ITP `CSS` framework](https://bitbucket.org/inthepocket/itp-css). It adds tools like [Jekyll](http://jekyllrb.com/) and [Gulp](http://gulpjs.com/) to simplify designing and building in the browser. The boilerplate can be used as a **styleguide**, to build **static websites and applications** or to speed up making **HTML prototypes**.
 
 ## Installation
 
@@ -58,6 +58,6 @@ This boilerplate aims to support all modern browsers. This includes latest versi
 
 ## Why are we doing this?
 
-- Reducing the gap between Design and Development
+- Building the bridge between Design and Development
 - Enforce a global coding style
 - Create a scalable system for both small and big web projects

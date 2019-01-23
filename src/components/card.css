@@ -35,15 +35,25 @@
     padding: var(--spacingBase) var(--spacingBase) 0;
   }
 
-  .itp-Card--lg > .itp-Card__body {
-    padding: var(--spacingLarge);
-  }
+/*
+ * Modifier: Styles
+*/
 
 .itp-Card--primary {
-  /* box-shadow: 0 5px 10px var(--colorNeutral100); */
-  border: var(--borderWidth) var(--borderStyle) var(--colorNeutral100);
+  background-color: var(--colorWhite);
+  box-shadow: 0 5px 25px rgba(0,0,0,.1), 0 10px 10px rgba(0,0,0,.05);
 }
 
 .itp-Card--primary > .itp-Card__body + .itp-Card__body {
   border-top: var(--borderWidth) var(--borderStyle) var(--colorNeutral100);
+}
+
+/*
+ * Modifiers: Sizing
+*/
+
+@media (--bp3) {
+  .itp-Card--lg > .itp-Card__body {
+    padding: var(--spacingLarge);
+  }
 }

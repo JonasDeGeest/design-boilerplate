@@ -10,7 +10,7 @@
 .itp-Alert {
   position: relative;
   /* [1] */
-  padding: 1rem 0 0;
+  padding: 1rem 1rem 0 0;
   margin-bottom: 2rem;
   border-radius: var(--radius);
 }

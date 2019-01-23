@@ -1,8 +1,8 @@
 {% if page.section != 'home' %}
-<p class="itp-Logo">
+<p class="itp-Logo {% if include.style == 'negative' %}itp-Logo--white{% endif %}">
   <a href="/index.html" class="itp-Logo__link">
     {% else %}
-    <h1 class="itp-Logo">
+    <h1 class="itp-Logo {% if include.style == 'negative' %}itp-Logo--white{% endif %}">
       {% endif %}
 
       {{site.title}}

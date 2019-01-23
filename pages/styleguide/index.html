@@ -2,115 +2,45 @@
 layout: frame
 title: Styleguide
 section: styleguide
-permalink: styleguide.html
+permalink: styleguide/index.html
 ---
 
 <div class="l-Frame__left">
-  <nav class="s-Navigation">
-    <ul class="s-Navigation__list">
-      <li class="s-Navigation__item">
-        <a href="#base" class="s-Navigation__link">Base elements</a>
-      </li>
-      <li class="s-Navigation__item">
-        <a href="#colors" class="s-Navigation__link">Colors</a>
-      </li>
-      <li class="s-Navigation__item">
-        <a href="#buttons" class="s-Navigation__link">Buttons</a>
-      </li>
-      <li class="s-Navigation__item">
-        <a href="#forms" class="s-Navigation__link">Forms</a>
-      </li>
-      <li class="s-Navigation__item">
-        <a href="#alerts" class="s-Navigation__link">Alerts</a>
-      </li>
-      <li class="s-Navigation__item">
-        <a href="#pagination" class="s-Navigation__link">Pagination</a>
-      </li>
-      <li class="s-Navigation__item">
-        <a href="#helpers" class="s-Navigation__link">Helpers</a>
-      </li>
-      <li class="s-Navigation__item">
-        <a href="#cards" class="s-Navigation__link">Cards</a>
-      </li>
-    </ul>
-  </nav>
+
+  {% include styleguide/navigation.html %}
+
 </div>
 <div class="l-Frame__main">
   <div class="l-Row">
     <div class="l-Container">
       <h1 class="itp-PageTitle">{{ page.title }}</h1>
+      <p class="itp-PageIntro u-Width1of2--bp4">This boilerplate comes with a styleguide that contains handy defaults, components and helpers to quickly help you create a static prototype of your product.</p>
     </div>
   </div>
 
-  <section id="base" class="l-Row">
+  <section id="icons" class="l-Row">
     <div class="l-Container">
-      <h2 class="s-SectionTitle">Base Elements</h2>
-
-      {% include styleguide/base.html %}
-
-    </div>
-  </section>
-
-  <section id="colors" class="l-Row">
-    <div class="l-Container">
-      <h2 class="s-SectionTitle">Colors</h2>
-
-      {% include styleguide/colors.html %}
-
-    </div>
-  </section>
-
-  <section id="buttons" class="l-Row">
-    <div class="l-Container">
-      <h2 class="s-SectionTitle">Buttons</h2>
-
-      {% include styleguide/buttons.html %}
-
-    </div>
-  </section>
-
-  <section id="forms" class="l-Row">
-    <div class="l-Container">
-      <h2 class="s-SectionTitle">Forms</h2>
-
-      {% include styleguide/forms.html %}
-
-    </div>
-  </section>
-
-  <section id="alerts" class="l-Row">
-    <div class="l-Container">
-      <h2 class="s-SectionTitle">Alerts</h2>
-
-      {% include styleguide/alerts.html %}
-
-    </div>
-  </section>
-
-  <section id="pagination" class="l-Row">
-    <div class="l-Container">
-      <h2 class="s-SectionTitle">Pagination</h2>
-
-      {% include molecules/pagination.html %}
-
-    </div>
-  </section>
-
-  <section id="helpers" class="l-Row">
-    <div class="l-Container">
-      <h2 class="s-SectionTitle">Helpers</h2>
-
-      {% include styleguide/helpers.html %}
-
-    </div>
-  </section>
-
-  <section id="cards" class="l-Row">
-    <div class="l-Container">
-      <h2 class="s-SectionTitle">Cards</h2>
-
-      {% include styleguide/cards.html %}
-
+      <div class="itp-Card itp-Card--primary itp-Card--lg">
+        <div class="itp-Card__body">
+          <div class="l-Grid l-Grid--gutter">
+            <div class="l-Grid__item u-Width1of3--bp3">
+              <h3>Foundations</h3>
+              <p>The foundations of your products brand. Find your logo, typographic styles, colors in this overview.</p>
+              <p><a href="../styleguide/foundations.html">Read more</a></p>
+            </div>
+            <div class="l-Grid__item u-Width1of3--bp3">
+              <h3>Components</h3>
+              <p>Find an overview of all components that are being serverd with this boilerplate.</p>
+              <p><a href="../styleguide/components.html">Read more</a></p>
+            </div>
+            <div class="l-Grid__item u-Width1of3--bp3">
+              <h3>Layout</h3>
+              <p>Explore the grid system that comes with our ITP CSS framework</p>
+              <p><a href="../styleguide/layout.html">Read more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </div>
