@@ -1,1 +1,1 @@
-$(chopstick.initDependencies());
+$(frontend.init());
