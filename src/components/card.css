@@ -19,7 +19,7 @@
 }
 
   .itp-Card__header {
-    padding: var(--spacingBase);
+    padding: var(--spacingBase) var(--spacingBase) 0;
   }
 
   .itp-Card__title {
@@ -32,7 +32,7 @@
   }
 
   .itp-Card__footer {
-    padding: var(--spacingBase) var(--spacingBase) 0;
+    padding: 0 var(--spacingBase);
   }
 
 /*
