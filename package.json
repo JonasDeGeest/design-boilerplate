@@ -12,7 +12,7 @@
     "autoprefixer": "^8.3.0",
     "browser-sync": "^2.23.7",
     "del": "^3.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-cheerio": "^0.6.3",
     "gulp-concat": "^2.6.1",
     "gulp-filesize": "^0.0.6",
